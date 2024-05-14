@@ -1,6 +1,6 @@
 Project: assertj-core-3.25.3.jar
 Classes containing reachable Reflections count: 39
-Classes reaching reflection calls only transitively count: 69
+Classes reaching reflection calls only transitively count: 153
 Methods containing reachable Reflections count: 70
 -----------------------------
 Class: Introspection
@@ -21,22 +21,12 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
 at PC = 62
 at line 70
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ManipulateMetaObject which is Dynamic
 
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 71
 at line 71
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: Chunk
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: FieldSupport
 reachable Reflect Calls: 1
@@ -54,10 +44,11 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 415
 at line 237
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Casts which is Dynamic
+-----------------------------
+Class: Chunk
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: PropertySupport
 reachable Reflect Calls: 1
@@ -75,9 +66,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 14
 at line 151
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: Patch
@@ -87,6 +75,24 @@ Class only reaches reflection calls transitively
 Class: MyersDiff
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
+-----------------------------
+Class: MethodSupport
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of MethodSupport:
+
+Method: invokeMethod
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 6
+at line 58
+Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: InsertDelta
 reachable Reflect Calls: 0
@@ -108,45 +114,9 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
 at PC = 46
 at line 50
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ManipulateMetaObject which is Dynamic
 -----------------------------
-Class: MethodSupport
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-InvokeMethod which is Dynamic
-Methods of MethodSupport:
-
-Method: invokeMethod
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 6
-at line 58
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: ChangeDelta
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: DiffUtils
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DeleteDelta
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CaseFormatUtils
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -167,9 +137,17 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 45
 at line 257
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: ConstructObject which is Dynamic
+
+Method: buildOpentest4jAssertionFailedErrorWithLineNumbers
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 129
+at line 276
 Feature Category: ConstructObject which is Dynamic
 
 Method: isInstanceOf
@@ -181,24 +159,15 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
 at PC = 1
 at line 245
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: LoadClass which is Dynamic
-
-Method: buildOpentest4jAssertionFailedErrorWithLineNumbers
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 129
-at line 276
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: DeleteDelta
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CaseFormatUtils
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: FieldUtils
 reachable Reflect Calls: 3
@@ -207,6 +176,17 @@ Direct Features:
 AccessObject which is Dynamic
 ManipulateMetaObject which is Dynamic
 Methods of FieldUtils:
+
+Method: getField
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 67
+at line 72
+Feature Category: ManipulateMetaObject which is Dynamic
 
 Method: readField
 Reachable Reflect Methods Count: 2
@@ -218,32 +198,16 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
 at PC = 31
 at line 144
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ManipulateMetaObject which is Dynamic
 
 Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
 at PC = 43
 at line 148
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: AccessObject which is Dynamic
-
-Method: getField
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 67
-at line 72
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ManipulateMetaObject which is Dynamic
+-----------------------------
+Class: ChangeDelta
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: IterableUtil
 reachable Reflect Calls: 1
@@ -261,9 +225,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
 at PC = 2
 at line 123
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: Arrays
@@ -272,20 +233,6 @@ Class reaches Reflection Calls directly
 Direct Features: 
 Array which is Dynamic
 Methods of Arrays:
-
-Method: asObjectArray
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 38
-at line 62
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
 
 Method: array
 Reachable Reflect Methods Count: 1
@@ -296,9 +243,17 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
 at PC = 56
 at line 147
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: Array which is Dynamic
+
+Method: asObjectArray
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 38
+at line 62
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: ConfigurationProvider
@@ -321,9 +276,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 10
 at line 58
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: Objects
@@ -342,9 +294,6 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 17
 at line 110
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Casts which is Dynamic
 -----------------------------
 Class: StandardRepresentation
@@ -371,16 +320,9 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 5
 at line 45
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: ShouldHaveParameter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -400,12 +342,9 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 12
 at line 55
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: Objects
+Class: Iterables
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -416,104 +355,20 @@ Direct Features:
 Array which is Dynamic
 Methods of Arrays:
 
-Method: assertIsSubsetOf
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 34
-at line 539
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertContainsSubsequence
+Method: containsSequenceAtGivenIndex
 Reachable Reflect Methods Count: 2
 Reflect Features: 
 Array which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 68
-at line 398
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+at PC = 20
+at line 381
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 75
-at line 398
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertContains
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 42
-at line 205
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: filterElements
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 42
-at line 662
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertDoesNotContain
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 40
-at line 466
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertStartsWith
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 57
-at line 491
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 63
-at line 491
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+at PC = 28
+at line 381
 Feature Category: Array which is Dynamic
 
 Method: assertDoesNotContain
@@ -525,9 +380,44 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 32
 at line 243
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: Array which is Dynamic
+
+Method: assertContains
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 42
+at line 205
+Feature Category: Array which is Dynamic
+
+Method: filterElements
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 42
+at line 662
+Feature Category: Array which is Dynamic
+
+Method: assertStartsWith
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 57
+at line 491
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 63
+at line 491
 Feature Category: Array which is Dynamic
 
 Method: assertContains
@@ -539,39 +429,11 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 29
 at line 228
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 58
 at line 230
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertDoesNotContainSubsequence
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 59
-at line 440
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 66
-at line 440
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Method: assertEndsWith
@@ -583,39 +445,11 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 70
 at line 528
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 76
 at line 528
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: containsSequenceAtGivenIndex
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 20
-at line 381
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 28
-at line 381
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Method: asList
@@ -627,9 +461,17 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 44
 at line 730
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: Array which is Dynamic
+
+Method: assertIsSubsetOf
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 34
+at line 539
 Feature Category: Array which is Dynamic
 
 Method: assertContainsExactly
@@ -641,18 +483,59 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 72
 at line 289
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 81
 at line 290
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
+
+Method: assertDoesNotContain
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 40
+at line 466
+Feature Category: Array which is Dynamic
+
+Method: assertDoesNotContainSubsequence
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 59
+at line 440
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 66
+at line 440
+Feature Category: Array which is Dynamic
+
+Method: assertContainsSubsequence
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 68
+at line 398
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 75
+at line 398
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: Objects
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: Short2DArrays
 reachable Reflect Calls: 0
@@ -665,32 +548,15 @@ Direct Features:
 Array which is Dynamic
 Methods of Arrays2D:
 
-Method: countArrayElements
+Method: assertHasDimensions
 Reachable Reflect Methods Count: 1
 Reflect Features: 
 Array which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 16
-at line 157
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Method: assertDoesNotContain
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 31
-at line 168
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+at PC = 22
+at line 78
 Feature Category: Array which is Dynamic
 
 Method: assertEmpty
@@ -702,9 +568,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 24
 at line 68
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Method: assertContains
@@ -716,17 +579,33 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 29
 at line 139
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 57
 at line 141
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: Array which is Dynamic
+
+Method: assertDoesNotContain
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 31
+at line 168
+Feature Category: Array which is Dynamic
+
+Method: countArrayElements
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 16
+at line 157
 Feature Category: Array which is Dynamic
 
 Method: assertHasSameDimensionsAs
@@ -738,32 +617,16 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 70
 at line 117
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 84
 at line 119
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
-
-Method: assertHasDimensions
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 22
-at line 78
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
+-----------------------------
+Class: Object2DArrays
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: Maps
 reachable Reflect Calls: 4
@@ -783,9 +646,6 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
 at PC = 1
 at line 449
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: LoadClass which is Dynamic
 
 Method: clone
@@ -798,36 +658,19 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 46
 at line 426
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
 
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 83
 at line 431
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 108
 at line 434
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: Object2DArrays
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ShouldBeEqual
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Long2DArrays
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -836,6 +679,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: ShouldBeEqualByComparingOnlyGivenFields
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Long2DArrays
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -862,28 +709,6 @@ Direct Features:
 Array which is Dynamic
 Methods of DeepDifference:
 
-Method: compareArrays
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 35
-at line 418
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 41
-at line 418
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
-
 Method: deepHashCode
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -893,10 +718,27 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 90
 at line 686
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
+
+Method: compareArrays
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 35
+at line 418
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 41
+at line 418
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: Int2DArrays
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: ShouldContainSubsequence
 reachable Reflect Calls: 1
@@ -914,14 +756,7 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 44
 at line 83
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
------------------------------
-Class: Int2DArrays
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: Float2DArrays
 reachable Reflect Calls: 0
@@ -935,15 +770,7 @@ Class: ElementsSatisfyingConsumer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CaseFormatUtils$toCamelCase(Ljava$lang$String:)Ljava$lang$String::22$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Double2DArrays
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ElementsSatisfyingConsumer$removeFirstReference(Ljava$lang$Object:Ljava$util$List:)V:12$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -967,17 +794,11 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 98
 at line 502
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 109
 at line 503
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: Char2DArrays
@@ -985,6 +806,14 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Byte2DArrays
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ElementsSatisfyingConsumer$removeFirstReference(Ljava$lang$Object:Ljava$util$List:)V:12$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CaseFormatUtils$toCamelCase(Ljava$lang$String:)Ljava$lang$String::22$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1008,9 +837,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 60
 at line 44
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: FieldLocation
@@ -1035,28 +861,14 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
 at PC = 1
 at line 26
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: LoadClass which is Dynamic
 
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 17
 at line 28
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: MultipleAssertionsError
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: AssertionErrorMessagesAggregator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AssertionErrorMessagesAggregrator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1080,12 +892,13 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
 at PC = 4
 at line 78
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: SoftAssertionError
+Class: AssertionErrorMessagesAggregrator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MultipleAssertionsError
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1096,20 +909,6 @@ Direct Features:
 LoadClass which is Dynamic
 Methods of DualValue:
 
-Method: isAJsonValueNode
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 2
-at line 288
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: LoadClass which is Dynamic
-
 Method: isAnObjectNode
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -1119,10 +918,44 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
 at PC = 2
 at line 298
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: LoadClass which is Dynamic
+
+Method: isAJsonValueNode
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 2
+at line 288
+Feature Category: LoadClass which is Dynamic
+-----------------------------
+Class: Assertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractDateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Assumptions
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of Assumptions:
+
+Method: asAssumption
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 15
+at line 1556
+Feature Category: ConstructObject which is Dynamic
 -----------------------------
 Class: RecursiveComparisonConfiguration$Builder
 reachable Reflect Calls: 0
@@ -1144,33 +977,9 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 31
 at line 200
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: Assumptions
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-ConstructObject which is Dynamic
-Methods of Assumptions:
-
-Method: asAssumption
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 15
-at line 1556
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ConstructObject which is Dynamic
------------------------------
-Class: RecursiveAssertionDriver
+Class: SoftAssertionError
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1178,38 +987,7 @@ Class: RecursiveAssertionConfiguration$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SoftlyExtension
-reachable Reflect Calls: 2
-Class reaches Reflection Calls directly
-Direct Features: 
-ManipulateObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-Methods of SoftlyExtension:
-
-Method: initSoftAssertionsField
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-ManipulateObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 50
-at line 142
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ManipulateMetaObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 64
-at line 144
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ManipulateObject which is Dynamic
------------------------------
-Class: SoftAssertions
+Class: RecursiveAssertionDriver
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1231,39 +1009,49 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
 at PC = 2
 at line 438
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ManipulateMetaObject which is Dynamic
 
 Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
 at PC = 8
 at line 440
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ManipulateObject which is Dynamic
 -----------------------------
-Class: SoftAssertionsProvider
-reachable Reflect Calls: 1
+Class: SoftlyExtension
+reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
 Direct Features: 
-ConstructObject which is Dynamic
-Methods of SoftAssertionsProvider:
+ManipulateObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Methods of SoftlyExtension:
 
-Method: assertSoftly
-Reachable Reflect Methods Count: 1
+Method: initSoftAssertionsField
+Reachable Reflect Methods Count: 2
 Reflect Features: 
-ConstructObject which is Dynamic
+ManipulateObject which is Dynamic
+ManipulateMetaObject which is Dynamic
 Reachable Reflect Methods: 
 
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 12
-at line 115
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ConstructObject which is Dynamic
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 50
+at line 142
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 64
+at line 144
+Feature Category: ManipulateObject which is Dynamic
+-----------------------------
+Class: ZonedDateTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractZonedDateTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SoftAssertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractAssert
 reachable Reflect Calls: 1
@@ -1281,12 +1069,13 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 21
 at line 105
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: AbstractObjectAssert
+Class: UrlAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractUrlAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1294,11 +1083,149 @@ Class: Object2DArrayAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: AbstractLongArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Long2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: AbstractStringAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: AbstractObjectAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractPathAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SpliteratorAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SoftAssertionsProvider
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of SoftAssertionsProvider:
+
+Method: assertSoftly
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 12
+at line 115
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: OptionalAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractSpliteratorAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AtomicBooleanAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: OptionalDoubleAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: OptionalLongAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MatcherAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: OptionalIntAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: AbstractSoftAssertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AtomicIntegerAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AtomicIntegerArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalDateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ShortArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RecursiveComparisonAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LongAdderAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractShortArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AtomicLongAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractOptionalLongAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AtomicLongArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RecursiveAssertionAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Short2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Abstract2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: PredicateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: PeriodAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalDateTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractOptionalAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractPeriodAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1309,20 +1236,6 @@ Direct Features:
 ConstructObject which is Dynamic
 Methods of SoftProxies:
 
-Method: createBigDecimalScaleAssertProxy
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 32
-at line 160
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ConstructObject which is Dynamic
-
 Method: createIterableSizeAssertProxy
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -1332,9 +1245,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 44
 at line 172
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 
 Method: createRecursiveComparisonAssertProxy
@@ -1346,9 +1256,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 44
 at line 198
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 
 Method: createMapSizeAssertProxy
@@ -1360,9 +1267,17 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 44
 at line 185
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: ConstructObject which is Dynamic
+
+Method: createBigDecimalScaleAssertProxy
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 32
+at line 160
 Feature Category: ConstructObject which is Dynamic
 
 Method: createFileSizeAssertProxy
@@ -1374,9 +1289,6 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 32
 at line 148
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 
 Method: createSoftAssertionProxy
@@ -1388,37 +1300,13 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 31
 at line 128
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: ProxifyMethodChangingTheObjectUnderTest
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-Array which is Dynamic
-Methods of ProxifyMethodChangingTheObjectUnderTest:
-
-Method: actualClass
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
-at PC = 10
-at line 123
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
------------------------------
-Class: Short2DArrayAssert
+Class: OffsetDateTimeAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Long2DArrayAssert
+Class: AbstractOffsetDateTimeAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1426,36 +1314,15 @@ Class: AbstractPredicateAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractObjectArrayAssert
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-Array which is Dynamic
-Methods of AbstractObjectArrayAssert:
-
-Method: flatExtracting
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 79
-at line 2799
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: Array which is Dynamic
------------------------------
-Class: LongPredicateAssert
+Class: OffsetTimeAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ListAssert$ListFromStream
+Class: AtomicReferenceAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractPredicateLikeAssert
+Class: AbstractOptionalIntAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1475,24 +1342,101 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 76
 at line 2878
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: IntPredicateAssert
+Class: AbstractOptionalDoubleAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Boolean2DArrayAssert
+Class: AbstractObjectArrayAssert
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of AbstractObjectArrayAssert:
+
+Method: flatExtracting
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 79
+at line 2799
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ProxifyMethodChangingTheObjectUnderTest
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ProxifyMethodChangingTheObjectUnderTest:
+
+Method: actualClass
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 10
+at line 123
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: AbstractOffsetTimeAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: DoublePredicateAssert
+Class: AbstractMatcherAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: JUnitJupiterBDDSoftAssertions
+Class: LongPredicateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractPredicateLikeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractLongAdderAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractFileAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LongArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractLocalTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractCharSequenceAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractLocalDateTimeAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractLocalDateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InstantAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ListAssert$ListFromStream
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1512,16 +1456,73 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
 at PC = 76
 at line 1884
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: Byte2DArrayAssert
+Class: AbstractCharArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Char2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CompletableFutureAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JUnitJupiterBDDSoftAssertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: BooleanAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IntArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractIntArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IntPredicateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IteratorAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Int2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InputStreamAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractInputStreamAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractInstantAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: BooleanArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Boolean2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ByteArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractIteratorAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1541,22 +1542,7 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 9
 at line 50
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: Casts which is Dynamic
------------------------------
-Class: AbstractListAssert
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Char2DArrayAssert
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Float2DArrayAssert
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: ClassLoadingStrategyFactory
 reachable Reflect Calls: 1
@@ -1574,35 +1560,79 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 78
 at line 62
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: IntPredicateAssert$toPredicate(Ljava$util$function$IntPredicate:)Ljava$util$function$Predicate::10$Lambda
+Class: Byte2DArrayAssert
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ClassBasedNavigableIterableAssert
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-ConstructObject which is Dynamic
-Methods of ClassBasedNavigableIterableAssert:
-
-Method: buildAssert
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 68
-at line 63
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: ConstructObject which is Dynamic
+Class: DoublePredicateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CharArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractListAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FloatArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractFloatArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Float2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FileAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractBooleanAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractBooleanArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DoubleArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Double2DArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractByteArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FutureAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractFutureAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CharSequenceAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractDoubleArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Java6Assertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractClassAssert
 reachable Reflect Calls: 3
@@ -1610,20 +1640,6 @@ Class reaches Reflection Calls directly
 Direct Features: 
 InvokeMethod which is Dynamic
 Methods of AbstractClassAssert:
-
-Method: isRecord
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 18
-at line 327
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
-Feature Category: InvokeMethod which is Dynamic
 
 Method: getRecordComponentNames
 Reachable Reflect Methods Count: 2
@@ -1634,17 +1650,22 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 18
 at line 388
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
 
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 79
 at line 392
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
+Feature Category: InvokeMethod which is Dynamic
+
+Method: isRecord
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 18
+at line 327
 Feature Category: InvokeMethod which is Dynamic
 
 Method: isSealed
@@ -1656,10 +1677,19 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 19
 at line 1161
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: DateAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractCompletableFutureAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IntPredicateAssert$toPredicate(Ljava$util$function$IntPredicate:)Ljava$util$function$Predicate::10$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: ClassBasedNavigableListAssert
 reachable Reflect Calls: 1
@@ -1677,20 +1707,59 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 68
 at line 61
-parameter amount 0
-parameters resolvable intra-procedural:  0
-parameters constant or resolvable inter-procedural:  0
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: Double2DArrayAssert
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
+Class: ClassBasedNavigableIterableAssert
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of ClassBasedNavigableIterableAssert:
+
+Method: buildAssert
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 68
+at line 63
+Feature Category: ConstructObject which is Dynamic
 -----------------------------
 Class: BDDSoftAssertions
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: BDDAssertions
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractEnumerableAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AssertionsForClassTypes
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractTemporalAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractArrayAssert
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: RecursiveComparisonConfiguration$getActualChildrenNodeNamesToCompare(Lorg$assertj$core$api$recursive$comparison$DualValue:)Ljava$util$Set::80$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InstanceOfAssertFactories$<clinit>()V:984$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Java6BDDAssertions
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------

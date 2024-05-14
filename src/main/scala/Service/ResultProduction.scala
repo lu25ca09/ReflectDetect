@@ -90,9 +90,9 @@ class ResultProduction(var rootService: RootService){
             reachableReflectMethod.method.toString() +
             "\nat PC = " + reachableReflectMethod.pc +
             "\nat line " + reachableReflectMethod.lineNumber +
-            "\nparameter amount "+(reachableReflectMethod.parameterIntra.size+reachableReflectMethod.parameterConstOrInter.size)+
-            "\nparameters resolvable intra-procedural:  " + reachableReflectMethod.parameterIntra.size +
-            "\nparameters constant or resolvable inter-procedural:  " + reachableReflectMethod.parameterConstOrInter.size +
+           // "\nparameter amount "+(reachableReflectMethod.parameterIntra.size+reachableReflectMethod.parameterConstOrInter.size)+
+            // "\nparameters resolvable intra-procedural:  " + reachableReflectMethod.parameterIntra.size +
+            // "\nparameters constant or resolvable inter-procedural:  " + reachableReflectMethod.parameterConstOrInter.size +
             "\nFeature Category: " + reachableReflectMethod.directFeature)
         })
 
