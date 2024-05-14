@@ -1,0 +1,106 @@
+Project: retrofit-2.9.0.jar
+Classes containing reachable Reflections count: 5
+Classes reaching reflection calls only transitively count: 0
+Methods containing reachable Reflections count: 6
+-----------------------------
+Class: Platform
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Methods of Platform:
+
+Method: <init>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
+at PC = 38
+at line 59
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Method: invokeDefaultMethod
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 26
+at line 107
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: Retrofit
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Proxy which is Dynamic
+Methods of Retrofit:
+
+Method: create
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Proxy which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Proxy{ public static java.lang.Object newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler) }
+at PC = 26
+at line 143
+Feature Category: Proxy which is Dynamic
+-----------------------------
+Class: Retrofit$1
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of Retrofit$1:
+
+Method: invoke
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 12
+at line 155
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: Utils
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of Utils:
+
+Method: getRawType
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 80
+at line 85
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ParameterHandler$2
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ParameterHandler$2:
+
+Method: apply
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 26
+at line 51
+Feature Category: Array which is Dynamic

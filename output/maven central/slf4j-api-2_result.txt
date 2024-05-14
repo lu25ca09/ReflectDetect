@@ -1,0 +1,40 @@
+Project: slf4j-api-2.0.13.jar
+Classes containing reachable Reflections count: 2
+Classes reaching reflection calls only transitively count: 0
+Methods containing reachable Reflections count: 2
+-----------------------------
+Class: SubstituteLogger
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of SubstituteLogger:
+
+Method: log
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 23
+at line 478
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: LoggerFactory
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of LoggerFactory:
+
+Method: loadExplicitlySpecified
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 65
+at line 225
+Feature Category: ConstructObject which is Dynamic

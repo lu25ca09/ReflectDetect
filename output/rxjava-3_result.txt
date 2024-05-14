@@ -1,0 +1,138 @@
+Project: rxjava-3.1.8.jar
+Classes containing reachable Reflections count: 7
+Classes reaching reflection calls only transitively count: 2
+Methods containing reachable Reflections count: 7
+-----------------------------
+Class: ReplaySubject
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ReplaySubject$SizeBoundReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplaySubject$SizeBoundReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 40
+at line 954
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplaySubject$SizeAndTimeBoundReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplaySubject$SizeAndTimeBoundReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 41
+at line 1244
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplaySubject$UnboundedReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplaySubject$UnboundedReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 84
+at line 725
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplayProcessor$UnboundedReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplayProcessor$UnboundedReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 39
+at line 711
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplayProcessor$SizeBoundReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplayProcessor$SizeBoundReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 52
+at line 948
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplayProcessor
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ReplayProcessor$SizeAndTimeBoundReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplayProcessor$SizeAndTimeBoundReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 41
+at line 1214
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: Functions$CastToClass
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Casts which is Dynamic
+Methods of Functions$CastToClass:
+
+Method: apply
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Casts which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
+at PC = 5
+at line 235
+Feature Category: Casts which is Dynamic

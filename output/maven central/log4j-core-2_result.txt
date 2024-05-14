@@ -1,0 +1,982 @@
+Project: log4j-core-2.23.1.jar
+Classes containing reachable Reflections count: 30
+Classes reaching reflection calls only transitively count: 28
+Methods containing reachable Reflections count: 50
+-----------------------------
+Class: UnsafeUtil$1
+reachable Reflect Calls: 3
+Class reaches Reflection Calls directly
+Direct Features: 
+AccessObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+LoadClass which is Dynamic
+Methods of UnsafeUtil$1:
+
+Method: run
+Reachable Reflect Methods Count: 3
+Reflect Features: 
+AccessObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 2
+at line 42
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 13
+at line 43
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 18
+at line 44
+Feature Category: AccessObject which is Dynamic
+-----------------------------
+Class: WatcherFactory
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of WatcherFactory:
+
+Method: instantiate
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 65
+at line 99
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: ReflectionUtil
+reachable Reflect Calls: 5
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+ConstructObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Methods of ReflectionUtil:
+
+Method: makeAccessible
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 16
+at line 58
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Method: makeAccessible
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 33
+at line 74
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Method: getFieldValue
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 23
+at line 94
+Feature Category: AccessObject which is Dynamic
+
+Method: setFieldValue
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 24
+at line 128
+Feature Category: ManipulateObject which is Dynamic
+
+Method: instantiate
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 17
+at line 188
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: OptionConverter
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of OptionConverter:
+
+Method: toLevel
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 168
+at line 199
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: Loader
+reachable Reflect Calls: 3
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of Loader:
+
+Method: initializeClass
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 3
+at line 226
+Feature Category: LoadClass which is Dynamic
+
+Method: loadSystemClass
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 5
+at line 251
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 23
+at line 254
+Feature Category: LoadClass which is Dynamic
+-----------------------------
+Class: CyclicBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of CyclicBuffer:
+
+Method: makeArray
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 2
+at line 49
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ArrayUtils
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ArrayUtils:
+
+Method: remove
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 60
+at line 91
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: PluginBuilder
+reachable Reflect Calls: 4
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+InvokeMethod which is Dynamic
+Methods of PluginBuilder:
+
+Method: createBuilder
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 66
+at line 167
+Feature Category: InvokeMethod which is Dynamic
+
+Method: build
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 144
+at line 142
+Feature Category: InvokeMethod which is Dynamic
+
+Method: injectFields
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 265
+at line 198
+Feature Category: ManipulateObject which is Dynamic
+
+Method: validateFields
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 48
+at line 220
+Feature Category: AccessObject which is Dynamic
+-----------------------------
+Class: CommandLine
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateMetaObject which is Dynamic
+Methods of CommandLine:
+
+Method: init
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 35
+at line 1917
+Feature Category: ManipulateMetaObject which is Dynamic
+-----------------------------
+Class: CommandLine$Interpreter
+reachable Reflect Calls: 14
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Array which is Dynamic
+ConstructObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Methods of CommandLine$Interpreter:
+
+Method: <init>
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ConstructObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
+at PC = 940
+at line 2039
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 949
+at line 2040
+Feature Category: ConstructObject which is Dynamic
+
+Method: createMap
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object newInstance() }
+at PC = 1
+at line 2895
+Feature Category: ConstructObject which is Dynamic
+
+Method: applyValuesToArrayField
+Reachable Reflect Methods Count: 5
+Reflect Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 5
+at line 2649
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 76
+at line 2656
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 165
+at line 2665
+Feature Category: Array which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 177
+at line 2666
+Feature Category: ManipulateObject which is Dynamic
+
+Call of java.lang.reflect.Array{ public static void set(java.lang.Object,int,java.lang.Object) }
+at PC = 208
+at line 2668
+Feature Category: Array which is Dynamic
+
+Method: applyValuesToMapField
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 90
+at line 2545
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 118
+at line 2548
+Feature Category: ManipulateObject which is Dynamic
+
+Method: createCollection
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object newInstance() }
+at PC = 70
+at line 2890
+Feature Category: ConstructObject which is Dynamic
+
+Method: applyValuesToCollectionField
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 5
+at line 2682
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 76
+at line 2689
+Feature Category: ManipulateObject which is Dynamic
+
+Method: applyValueToSingleValuedField
+Reachable Reflect Methods Count: 3
+Reflect Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 110
+at line 2489
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 185
+at line 2499
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 377
+at line 2524
+Feature Category: ManipulateObject which is Dynamic
+-----------------------------
+Class: CommandLine$Help
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateMetaObject which is Dynamic
+Methods of CommandLine$Help:
+
+Method: <init>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 139
+at line 3347
+Feature Category: ManipulateMetaObject which is Dynamic
+-----------------------------
+Class: CommandLine$Help$DefaultOptionRenderer
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+AccessObject which is Dynamic
+Array which is Dynamic
+Methods of CommandLine$Help$DefaultOptionRenderer:
+
+Method: createDefaultValue
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 7
+at line 4002
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 72
+at line 4009
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: PatternParser
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of PatternParser:
+
+Method: createConverter
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 598
+at line 661
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: AbstractStyleNameConverter
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of AbstractStyleNameConverter:
+
+Method: newInstance
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 59
+at line 331
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: AbstractStyleNameConverter$Yellow
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$White
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Magenta
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Red
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Green
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Cyan
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Blue
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractStyleNameConverter$Black
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Log4jLogEvent
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ConfigurationFactory
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MulticastDnsAdvertiser
+reachable Reflect Calls: 5
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+InvokeMethod which is Dynamic
+Methods of MulticastDnsAdvertiser:
+
+Method: createJmDnsVersion3
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 19
+at line 150
+Feature Category: InvokeMethod which is Dynamic
+
+Method: unadvertise
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 37
+at line 126
+Feature Category: InvokeMethod which is Dynamic
+
+Method: advertise
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 287
+at line 104
+Feature Category: InvokeMethod which is Dynamic
+
+Method: buildServiceInfoVersion3
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 85
+at line 182
+Feature Category: InvokeMethod which is Dynamic
+
+Method: buildServiceInfoVersion1
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 93
+at line 167
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: Interpolator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LoggerConfig
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractConfiguration
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ContextDataFactory
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of ContextDataFactory:
+
+Method: createContextData
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 29
+at line 119
+Feature Category: ConstructObject which is Dynamic
+
+Method: createContextData
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 21
+at line 108
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: ReusableLogEventFactory
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ThreadContextDataInjector$ForCopyOnWriteThreadContextMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Logger
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RegexFilter
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+AccessObject which is Dynamic
+Methods of RegexFilter:
+
+Method: toPatternFlags
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public int getInt(java.lang.Object) }
+at PC = 114
+at line 161
+Feature Category: AccessObject which is Dynamic
+-----------------------------
+Class: Node
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Casts which is Dynamic
+Methods of Node:
+
+Method: getObject
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Casts which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
+at PC = 5
+at line 132
+Feature Category: Casts which is Dynamic
+-----------------------------
+Class: PluginElementVisitor
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of PluginElementVisitor:
+
+Method: visit
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 353
+at line 84
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ConstraintValidators
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: PluginUtil
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of PluginUtil:
+
+Method: instantiatePlugin
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 18
+at line 66
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: TypeConverterRegistry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeConverters$ByteArrayConverter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Base64Converter
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of Base64Converter:
+
+Method: <clinit>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 37
+at line 40
+Feature Category: InvokeMethod which is Dynamic
+
+Method: parseBase64Binary
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 33
+at line 67
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: DefaultConfigurationBuilder
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of DefaultConfigurationBuilder:
+
+Method: build
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 67
+at line 194
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: PropertiesPlugin
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ReliabilityStrategyFactory
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of ReliabilityStrategyFactory:
+
+Method: getReliabilityStrategy
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 96
+at line 61
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: AwaitCompletionReliabilityStrategy
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AwaitUnconditionallyReliabilityStrategy
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LockingReliabilityStrategy
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DefaultReliabilityStrategy
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AsyncLogger
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AsyncLoggerConfigDisruptor
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Methods of AsyncLoggerConfigDisruptor:
+
+Method: createEventHandler
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 9
+at line 178
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 23
+at line 181
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: RingBufferLogEventTranslator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DefaultAsyncWaitStrategyFactory
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Methods of DefaultAsyncWaitStrategyFactory:
+
+Method: createDefaultWaitStrategy
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 33
+at line 80
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 71
+at line 82
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: ConsoleAppender
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of ConsoleAppender:
+
+Method: getOutputStream
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 219
+at line 308
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: OnStartupTriggeringPolicy
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of OnStartupTriggeringPolicy:
+
+Method: initStartTime
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 23
+at line 56
+Feature Category: InvokeMethod which is Dynamic
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 52
+at line 60
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: AbstractDriverManagerConnectionSource
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of AbstractDriverManagerConnectionSource:
+
+Method: loadDriver
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 16
+at line 209
+Feature Category: LoadClass which is Dynamic
+-----------------------------
+Class: FactoryMethodConnectionSource$1
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of FactoryMethodConnectionSource$1:
+
+Method: getConnection
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 9
+at line 103
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: FactoryMethodConnectionSource
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of FactoryMethodConnectionSource:
+
+Method: createConnectionSource
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 83
+at line 92
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: JdbcDatabaseManager
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DataSourceConnectionSource
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
