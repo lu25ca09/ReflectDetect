@@ -1,0 +1,60 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
+[debug] current source = Set(${BASE}/src/main/scala/Data/ClassReachesReflect.scala, ${BASE}/src/main/scala/Data/ReachableReflectMethod.scala, ${BASE}/src/main/scala/Data/MethodInfo.scala, ${BASE}/src/main/scala/Data/ProjectInfo.scala, ${BASE}/src/main/scala/Service/CLIHandler.scala, ${BASE}/src/main/scala/Data/ClassInfo.scala, ${BASE}/src/main/scala/Service/RootService.scala, ${BASE}/src/main/scala/Service/ResultProduction.scala, ${BASE}/src/main/scala/Service/Analysis.scala, ${BASE}/src/main/scala/Data/ReflectFeature.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Service/CLIHandler.scala, ${BASE}/src/main/scala/Data/ClassInfo.scala, ${BASE}/src/main/scala/Data/MethodInfo.scala, ${BASE}/src/main/scala/Data/ReflectFeature.scala, ${BASE}/src/main/scala/Service/ResultProduction.scala, ${BASE}/src/main/scala/Service/RootService.scala, ${BASE}/src/main/scala/Service/Analysis.scala, ${BASE}/src/main/scala/Data/ReachableReflectMethod.scala, ${BASE}/src/main/scala/Data/ClassReachesReflect.scala, ${BASE}/src/main/scala/Data/ProjectInfo.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] Full compilation, no sources in previous analysis.
+[debug] all 10 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0 percent of all sources
+[debug] compilation cycle 1
+[info] compiling 10 Scala sources to C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\target\scala-2.12\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.10.0:compile for Scala 2.12.19
+[info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.19. Compiling...
+[debug] Creating plain compiler interface for 2.12.19.
+[debug]   > Arguments: 
+[debug] 	-d
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_3dcf422
+[debug] 	-nowarn
+[debug] 	-bootclasspath
+[debug] 	C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-library.jar
+[debug] 	-classpath
+[debug] 	C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.10.0\compiler-interface-1.10.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.10.0\util-interface-1.10.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.12\1.10.0\compiler-bridge_2.12-1.10.0-sources.jar;C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-compiler.jar;C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-reflect.jar;C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-xml_2.12-2.2.0.jar
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\scala\ZincCompat.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\scala\reflect\ReflectAccess.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\API.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\AbstractZincFile.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\Analyzer.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\CallbackGlobal.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\ClassName.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\Compat.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\CompilerBridge.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\ConsoleBridge.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\DelegatingReporter.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\Dependency.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\ExtractAPI.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\ExtractUsedNames.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\GlobalHelpers.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\InteractiveConsoleBridge.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\InteractiveConsoleFactoryBridge.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\InteractiveConsoleHelper.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\InteractiveConsoleResponse.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\JarUtils.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\JavaUtils.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\LocalToNonLocalClass.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\LocateClassFile.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\Log.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\Message.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\PlainNioFile.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\ScaladocBridge.scala
+[debug] 	C:\Users\lucas\AppData\Local\Temp\sbt_a34d5da\xsbt\trace.scala
+[debug]       
+[info]   Compilation completed in 10.674s.
+[debug] [zinc] Running cached compiler 505c0fd3 for Scala compiler version 2.12.19
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-library.jar
+[debug] 	-classpath
+[debug] 	C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\target\scala-2.12\classes;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\framework_2.13\5.0.0\framework_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\eed3si9n\sbt-assembly_2.12_1.0\2.2.0\sbt-assembly_2.12_1.0-2.2.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-assembler_2.13\5.0.0\bytecode-assembler_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\architecture-validation_2.13\5.0.0\architecture-validation_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\three-address-code_2.13\5.0.0\three-address-code_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\eed3si9n\jarjarabrams\jarjar-abrams-core_2.12\1.14.0\jarjar-abrams-core_2.12-1.14.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-creator_2.13\5.0.0\bytecode-creator_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\abstract-interpretation-framework_2.13\5.0.0\abstract-interpretation-framework_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\dependencies-extraction-library_2.13\5.0.0\dependencies-extraction-library_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\eed3si9n\jarjar\jarjar\1.14.0\jarjar-1.14.0.jar;C:\Users\lucas\.sbt\boot\scala-2.12.19\lib\scala-reflect.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-disassembler_2.13\5.0.0\bytecode-disassembler_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-commons\9.6\asm-commons-9.6.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-infrastructure_2.13\5.0.0\bytecode-infrastructure_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\static-analysis-infrastructure_2.13\5.0.0\static-analysis-infrastructure_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.13\1.3.0\scala-xml_2.13-1.3.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-tree\9.6\asm-tree-9.6.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\common_2.13\5.0.0\common_2.13-5.0.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parallel-collections_2.13\1.0.4\scala-parallel-collections_2.13-1.0.4.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-json_2.13\2.9.2\play-json_2.13-2.9.2.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\iheart\ficus_2.13\1.5.0\ficus_2.13-1.5.0.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\it\unimi\dsi\fastutil\8.5.4\fastutil-8.5.4.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-functional_2.13\2.9.2\play-functional_2.13-2.9.2.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.10.5\jackson-core-2.10.5.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.10.5\jackson-annotations-2.10.5.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.5\jackson-datatype-jdk8-2.10.5.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.5\jackson-datatype-jsr310-2.10.5.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.10.5.1\jackson-databind-2.10.5.1.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.3.4\config-1.3.4.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\it\unimi\dsi\fastutil-extra\8.5.4\fastutil-extra-8.5.4.jar;C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\it\unimi\dsi\fastutil-core\8.5.4\fastutil-core-8.5.4.jar
+[debug] Compilation failed (CompilerInterface)
+[error] (Compile / compileIncremental) Compilation failed

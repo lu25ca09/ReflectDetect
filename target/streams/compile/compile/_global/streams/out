@@ -1,0 +1,147 @@
+[debug] Acquiring lock on file C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock ...
+[error] error while loading package, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\common_2.13\5.0.0\common_2.13-5.0.0.jar(org/opalj/package.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of package.class: Scala signature package has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in package.class)
+[error] error while loading package, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/package.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of package.class: Scala signature package has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in package.class)
+[error] error while loading ClassFile, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/ClassFile.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of ClassFile.class: Scala signature ClassFile has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in ClassFile.class)
+[error] error while loading Method, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/Method.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of Method.class: Scala signature Method has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in Method.class)
+[error] error while loading package, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/analyses/package.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of package.class: Scala signature package has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in package.class)
+[error] error while loading package, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\three-address-code_2.13\5.0.0\three-address-code_2.13-5.0.0.jar(org/opalj/tac/package.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of package.class: Scala signature package has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in package.class)
+[error] error while loading Project, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/analyses/Project.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of Project.class: Scala signature Project has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in Project.class)
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Data\ProjectInfo.scala:14:33: org.opalj.br.analyses.Project does not take type parameters
+[error]                   val project : Project[URL],
+[error]                                 ^
+[error] error while loading CallGraph, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\three-address-code_2.13\5.0.0\three-address-code_2.13-5.0.0.jar(org/opalj/tac/cg/CallGraph.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of CallGraph.class: Scala signature CallGraph has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in CallGraph.class)
+[error] error while loading ObjectType, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/ObjectType.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of ObjectType.class: Scala signature ObjectType has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in ObjectType.class)
+[error] error while loading package, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/value/package.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of package.class: Scala signature package has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in package.class)
+[error] error while loading DeclaredMethod, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\bytecode-representation_2.13\5.0.0\bytecode-representation_2.13-5.0.0.jar(org/opalj/br/DeclaredMethod.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of DeclaredMethod.class: Scala signature DeclaredMethod has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in DeclaredMethod.class)
+[error] error while loading DUVar, class file 'C:\Users\lucas\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\de\opal-project\three-address-code_2.13\5.0.0\three-address-code_2.13-5.0.0.jar(org/opalj/tac/DUVar.class)' is broken
+[error] (class java.lang.RuntimeException/error reading Scala signature of DUVar.class: Scala signature DUVar has wrong version
+[error]  expected: 5.0
+[error]  found: 5.2 in DUVar.class)
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Data\ReachableReflectMethod.scala:14:63: org.opalj.tac.DUVar does not take type parameters
+[error]                              val parameterIntra : mutable.Set[DUVar[ValueInformation]],
+[error]                                                               ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Data\ReachableReflectMethod.scala:15:70: org.opalj.tac.DUVar does not take type parameters
+[error]                              val parameterConstOrInter : mutable.Set[DUVar[ValueInformation]],
+[error]                                                                      ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:15:39: value reachableMethods is not a member of org.opalj.tac.cg.CallGraph
+[error]     rootService.projectInfo.callGraph.reachableMethods().foreach(m => {
+[error]                                       ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:21:45: value callersOf is not a member of org.opalj.tac.cg.CallGraph
+[error]           rootService.projectInfo.callGraph.callersOf(m.method).iterator.foreach(caller => {
+[error]                                             ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:67:27: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]     val javaRep = pMethod.toJava
+[error]                           ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:105:15: value callersOf is not a member of org.opalj.tac.cg.CallGraph
+[error]     callGraph.callersOf(pDeclaredMethod).iterator.foreach(context => {
+[error]               ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:109:14: value addOne is not a member of scala.collection.mutable.ListBuffer[org.opalj.br.DeclaredMethod]
+[error]         list.addOne(context._1)
+[error]              ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:116:17: value callersOf is not a member of org.opalj.tac.cg.CallGraph
+[error]       callGraph.callersOf(current).iterator.foreach(context => {
+[error]                 ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:120:16: value addOne is not a member of scala.collection.mutable.ListBuffer[org.opalj.br.DeclaredMethod]
+[error]           list.addOne(context._1)
+[error]                ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:135:40: value addOne is not a member of scala.collection.mutable.HashMap[Int,Data.ReachableReflectMethod]
+[error]     pClassInfo.reachableReflectMethods.addOne(pPC, pReflectMethod)
+[error]                                        ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:136:41: value addOne is not a member of scala.collection.mutable.HashMap[Int,Data.ReachableReflectMethod]
+[error]     pMethodInfo.reachableReflectMethods.addOne(pPC, pReflectMethod)
+[error]                                         ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:146:31: value addOne is not a member of scala.collection.mutable.Set[Data.ReflectFeature]
+[error]     pClassInfo.directFeatures.addOne(pReflectMethod.directFeature)
+[error]                               ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:147:32: value addOne is not a member of scala.collection.mutable.Set[Data.ReflectFeature]
+[error]     pMethodInfo.directFeatures.addOne(pReflectMethod.directFeature)
+[error]                                ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:151:23: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]     val temp = method.toJava //TODO: remove debugger temps
+[error]                       ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:152:24: value declaringClassType is not a member of org.opalj.br.DeclaredMethod
+[error]     val temp2 = method.declaringClassType.toString()
+[error]                        ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:154:14: value declaringClassType is not a member of org.opalj.br.DeclaredMethod
+[error]       method.declaringClassType.toString().contains("java/lang/reflect") ||
+[error]              ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:157:16: value declaringClassType is not a member of org.opalj.br.DeclaredMethod
+[error]         method.declaringClassType.toString().contains("java/lang/Class") && (
+[error]                ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:158:18: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]           method.toJava.contains("forName(java.lang.String)") ||
+[error]                  ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:159:20: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]             method.toJava.contains("forName(java.lang.String,boolean,java.lang.ClassLoader)") ||
+[error]                    ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:160:20: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]             method.toJava.contains("cast(java.lang.Object") ||
+[error]                    ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:161:20: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]             method.toJava.contains("java.lang.Object newInstance()")
+[error]                    ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:163:16: value declaringClassType is not a member of org.opalj.br.DeclaredMethod
+[error]         method.declaringClassType.toString().contains("java/lang/ClassLoader") && method.toJava.contains("loadClass(java.lang.String)")
+[error]                ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\Analysis.scala:163:90: value toJava is not a member of org.opalj.br.DeclaredMethod
+[error]         method.declaringClassType.toString().contains("java/lang/ClassLoader") && method.toJava.contains("loadClass(java.lang.String)")
+[error]                                                                                          ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\CLIHandler.scala:6:8: object BaseConfig is not a member of package org.opalj.br
+[error] import org.opalj.br.{BaseConfig, Method, ObjectType}
+[error]        ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\CLIHandler.scala:50:19: not found: value BaseConfig
+[error]     var config  = BaseConfig
+[error]                   ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\CLIHandler.scala:54:22: org.opalj.br.analyses.Project does not take type parameters
+[error]     val tempProject: Project[URL] = Project.apply(projectFile = file,libraryFile = org.opalj.bytecode.JRELibraryFolder)
+[error]                      ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\CLIHandler.scala:56:19: org.opalj.br.analyses.Project does not take type parameters
+[error]     val project : Project[URL] = Project.apply(projectFiles=Array(file),libraryFiles = Array(org.opalj.bytecode.JRELibraryFolder),logContext = tempProject.logContext,config = config)
+[error]                   ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\ResultProduction.scala:52:43: value thisType is not a member of org.opalj.br.ClassFile
+[error]       val className = classInfo.classFile.thisType.simpleName
+[error]                                           ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\ResultProduction.scala:79:53: value name is not a member of org.opalj.br.Method
+[error]       result.++=("\n\nMethod: " + methodInfo.method.name)
+[error]                                                     ^
+[error] C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\src\main\scala\Service\ResultProduction.scala:90:43: value toString is not a member of org.opalj.br.Method
+[error] Note that Method extends Any, not AnyRef.
+[error] Such types can participate in value classes, but instances
+[error] cannot appear in singleton types or in reference comparisons.
+[error]             reachableReflectMethod.method.toString() +
+[error]                                           ^
+[error] 43 errors found
+[debug] Releasing lock on file C:\Users\lucas\OneDrive\Dokumente\uni\informatik\Bachlorarbeit\ReflectDetect\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock.
