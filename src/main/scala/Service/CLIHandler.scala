@@ -1,7 +1,7 @@
 package Service
 
 import Data.ClassReachesReflect.NoReflect
-import Data.{ClassInfo, MethodInfo, ProjectInfo, ReachableReflectMethod, ReflectFeature}
+import Data.{ClassInfo, MethodInfo, ProjectInfo, ReachableReflectMethod, DirectDynamicReflectFeature}
 import com.typesafe.config.ConfigValueFactory
 import org.opalj.br.{BaseConfig, Method, ObjectType}
 import org.opalj.br.analyses.Project
@@ -69,11 +69,11 @@ object CLIHandler {
   private def initClassInfo() : Unit = {
 
     rootService.projectInfo.project.allClassFiles.foreach(cf => {
-      val classInfo = new ClassInfo(cf,new mutable.HashMap[Method,MethodInfo],new mutable.HashMap[Int,ReachableReflectMethod], mutable.Set[ReflectFeature](), NoReflect)
+      val classInfo = new ClassInfo(cf,new mutable.HashMap[Method,MethodInfo],new mutable.HashMap[Int,ReachableReflectMethod], mutable.Set[DirectDynamicReflectFeature](), NoReflect)
       rootService.projectInfo.classes.addOne(cf.thisType, classInfo)
       cf.methods.foreach(m => {
 
-          classInfo.methods.addOne(m,new MethodInfo(method = m, reachableReflectMethods = new mutable.HashMap[Int,ReachableReflectMethod], directFeatures = mutable.Set[ReflectFeature](), declaringClass = classInfo))
+          classInfo.methods.addOne(m,new MethodInfo(method = m, reachableReflectMethods = new mutable.HashMap[Int,ReachableReflectMethod], directFeatures = mutable.Set[DirectDynamicReflectFeature](), declaringClass = classInfo))
       })
     })
   }

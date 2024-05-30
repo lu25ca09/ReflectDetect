@@ -10,7 +10,5 @@ class ReachableReflectMethod(val method : Method,
                              val declaredMethod: DeclaredMethod,
                              val pc : Integer,
                              val lineNumber : Integer,
-                             val directFeature: ReflectFeature,
-                             val parameterIntra : mutable.Set[DUVar[ValueInformation]],
-                             val parameterConstOrInter : mutable.Set[DUVar[ValueInformation]],
+                             val directFeature: DirectDynamicReflectFeature,
                              val caller : MethodInfo) {}

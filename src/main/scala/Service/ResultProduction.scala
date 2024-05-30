@@ -31,8 +31,10 @@ class ResultProduction(var rootService: RootService){
     val temp = projectInfo.projectPath.split("/")
     val projectName = temp(temp.size-1)
     result.++=("Project: " + projectName)
+    result.++=("\nClasses contained in this project: "+ projectInfo.project.allClassFiles.size)
     result.++=("\nClasses containing reachable Reflections count: " + projectInfo.getdirectCounter)
     result.++=("\nClasses reaching reflection calls only transitively count: " + projectInfo.getTransitiveCounter)
+    result.++=("\nMethods contained in this project: "+projectInfo.project.allMethods.size)
     result.++=("\nMethods containing reachable Reflections count: " + projectInfo.getMethodCounter)
     projectInfo.classes.values.foreach(classInfo => {
       addSingleClassToResult(classInfo)

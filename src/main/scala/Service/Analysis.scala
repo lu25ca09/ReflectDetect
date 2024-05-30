@@ -63,7 +63,7 @@ class Analysis(var rootService: RootService) {
 
   }
 
-  private def getFeature(pMethod: DeclaredMethod): Data.ReflectFeature = {
+  private def getFeature(pMethod: DeclaredMethod): Data.DirectDynamicReflectFeature = {
     val javaRep = pMethod.toJava
     if (javaRep.contains("forName(") ||
       javaRep.contains("loadClass")) {
