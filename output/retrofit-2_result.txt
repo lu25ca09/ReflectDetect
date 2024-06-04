@@ -1,6 +1,8 @@
 Project: retrofit-2.9.0.jar
+Classes contained in this project: 30134
 Classes containing reachable Reflections count: 5
 Classes reaching reflection calls only transitively count: 0
+Methods contained in this project: 243606
 Methods containing reachable Reflections count: 6
 -----------------------------
 Class: Platform

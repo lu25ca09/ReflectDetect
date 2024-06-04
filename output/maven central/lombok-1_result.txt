@@ -1,6 +1,8 @@
 Project: lombok-1.18.30.jar
+Classes contained in this project: 30197
 Classes containing reachable Reflections count: 7
 Classes reaching reflection calls only transitively count: 0
+Methods contained in this project: 243598
 Methods containing reachable Reflections count: 23
 -----------------------------
 Class: AnnotationProcessorHider$AnnotationProcessor
@@ -12,23 +14,6 @@ ConstructObject which is Dynamic
 ManipulateMetaObject which is Dynamic
 LoadClass which is Dynamic
 Methods of AnnotationProcessorHider$AnnotationProcessor:
-
-Method: createWrappedInstance
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-ConstructObject which is Dynamic
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
-at PC = 7
-at line 100
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 23
-at line 101
-Feature Category: ConstructObject which is Dynamic
 
 Method: disableJava9SillyWarning
 Reachable Reflect Methods Count: 3
@@ -52,6 +37,23 @@ Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String)
 at PC = 24
 at line 81
 Feature Category: LoadClass which is Dynamic
+
+Method: createWrappedInstance
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
+at PC = 7
+at line 100
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 23
+at line 101
+Feature Category: ConstructObject which is Dynamic
 -----------------------------
 Class: ShadowClassLoader
 reachable Reflect Calls: 1
@@ -79,17 +81,6 @@ InvokeMethod which is Dynamic
 LoadClass which is Dynamic
 Methods of PatchFixesHider$Util:
 
-Method: getShadowLoader
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 8
-at line 89
-Feature Category: LoadClass which is Dynamic
-
 Method: shadowLoadClass
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -99,6 +90,17 @@ Reachable Reflect Methods:
 Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
 at PC = 5
 at line 103
+Feature Category: LoadClass which is Dynamic
+
+Method: getShadowLoader
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 8
+at line 89
 Feature Category: LoadClass which is Dynamic
 
 Method: invokeMethod
@@ -111,168 +113,6 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 3
 at line 133
 Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: PatchFixesHider$PatchFixes
-reachable Reflect Calls: 14
-Class reaches Reflection Calls directly
-Direct Features: 
-ManipulateObject which is Dynamic
-AccessObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-Methods of PatchFixesHider$PatchFixes:
-
-Method: createFakeSearchResult
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-AccessObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 26
-at line 804
-Feature Category: ManipulateMetaObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 31
-at line 805
-Feature Category: AccessObject which is Dynamic
-
-Method: isGenerated
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 12
-at line 446
-Feature Category: AccessObject which is Dynamic
-
-Method: removeGeneratedSimpleNames
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 25
-at line 821
-Feature Category: AccessObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 82
-at line 827
-Feature Category: AccessObject which is Dynamic
-
-Method: checkBit24
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 11
-at line 709
-Feature Category: AccessObject which is Dynamic
-
-Method: removeGeneratedNames
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 26
-at line 837
-Feature Category: AccessObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 83
-at line 843
-Feature Category: AccessObject which is Dynamic
-
-Method: getRealMethodDeclarationSource
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 131
-at line 528
-Feature Category: AccessObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 161
-at line 529
-Feature Category: AccessObject which is Dynamic
-
-Method: setIsGeneratedFlagForName
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 44
-at line 728
-Feature Category: ManipulateObject which is Dynamic
-
-Method: getTokenEndOffsetFixed
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 13
-at line 758
-Feature Category: AccessObject which is Dynamic
-
-Method: skipRewritingGeneratedNodes
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 10
-at line 714
-Feature Category: AccessObject which is Dynamic
-
-Method: isGenerated
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 12
-at line 459
-Feature Category: AccessObject which is Dynamic
-
-Method: getSourceEndFixed
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 15
-at line 653
-Feature Category: AccessObject which is Dynamic
-
-Method: setIsGeneratedFlag
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 43
-at line 722
-Feature Category: ManipulateObject which is Dynamic
 -----------------------------
 Class: Processor
 reachable Reflect Calls: 2
@@ -302,6 +142,168 @@ Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
 at PC = 10
 at line 130
 Feature Category: AccessObject which is Dynamic
+-----------------------------
+Class: PatchFixesHider$PatchFixes
+reachable Reflect Calls: 14
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Methods of PatchFixesHider$PatchFixes:
+
+Method: createFakeSearchResult
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 26
+at line 804
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 31
+at line 805
+Feature Category: AccessObject which is Dynamic
+
+Method: checkBit24
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 11
+at line 709
+Feature Category: AccessObject which is Dynamic
+
+Method: getRealMethodDeclarationSource
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 131
+at line 528
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 161
+at line 529
+Feature Category: AccessObject which is Dynamic
+
+Method: removeGeneratedNames
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 26
+at line 837
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 83
+at line 843
+Feature Category: AccessObject which is Dynamic
+
+Method: skipRewritingGeneratedNodes
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 10
+at line 714
+Feature Category: AccessObject which is Dynamic
+
+Method: getTokenEndOffsetFixed
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 13
+at line 758
+Feature Category: AccessObject which is Dynamic
+
+Method: getSourceEndFixed
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 15
+at line 653
+Feature Category: AccessObject which is Dynamic
+
+Method: isGenerated
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 12
+at line 446
+Feature Category: AccessObject which is Dynamic
+
+Method: setIsGeneratedFlag
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 43
+at line 722
+Feature Category: ManipulateObject which is Dynamic
+
+Method: removeGeneratedSimpleNames
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 25
+at line 821
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 82
+at line 827
+Feature Category: AccessObject which is Dynamic
+
+Method: isGenerated
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 12
+at line 459
+Feature Category: AccessObject which is Dynamic
+
+Method: setIsGeneratedFlagForName
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 44
+at line 728
+Feature Category: ManipulateObject which is Dynamic
 -----------------------------
 Class: Tasks$Delombok
 reachable Reflect Calls: 11

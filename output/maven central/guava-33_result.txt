@@ -1,13 +1,11 @@
 Project: guava-33.1.0-jre.jar
+Classes contained in this project: 32411
 Classes containing reachable Reflections count: 36
-Classes reaching reflection calls only transitively count: 798
+Classes reaching reflection calls only transitively count: 800
+Methods contained in this project: 261087
 Methods containing reachable Reflections count: 49
 -----------------------------
 Class: TimeoutFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Joiner
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -15,27 +13,15 @@ Class: WrappingExecutorService
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Joiner
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Striped
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: InterruptibleTask
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TrustedListenableFutureTask
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ImmutableMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TrustedListenableFutureTask$TrustedFutureInterruptibleTask
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -102,18 +88,6 @@ at PC = 29
 at line 914
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: Lists
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: SimpleTimeLimiter
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
@@ -139,6 +113,10 @@ at PC = 19
 at line 112
 Feature Category: Casts which is Dynamic
 -----------------------------
+Class: ImmutableMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: SimpleTimeLimiter$1
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -157,15 +135,15 @@ at PC = 3
 at line 95
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: Lists
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ServiceManager$ServiceManagerState
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ServiceManager$ServiceManagerState$AwaitHealthGuard
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Monitor
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -173,7 +151,19 @@ Class: ServiceManager$ServiceManagerState$StoppedGuard
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Monitor
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Multiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ServiceManager$ServiceManagerState$AwaitHealthGuard
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -181,11 +171,15 @@ Class: ServiceManager
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: ImmutableCollection
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ListenerCallQueue
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableCollection
+Class: ServiceManager$ServiceListener
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -225,11 +219,11 @@ Class: ImmutableList$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MoreExecutors$DirectExecutorService
+Class: MoreExecutors$ListeningDecorator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MoreExecutors$ListeningDecorator
+Class: MoreExecutors$DirectExecutorService
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -237,7 +231,7 @@ Class: MoreExecutors$ScheduledListeningDecorator$NeverSuccessfulListenableFuture
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingListenableFuture
+Class: ImmutableSetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -249,23 +243,11 @@ Class: Callables
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ExecutionList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ListenerCallQueue$PerListenerQueue
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JdkFutureAdapters$ListenableFutureAdapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSetMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: MoreExecutors$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingListenableFuture
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -277,6 +259,39 @@ Casts which is Dynamic
 InvokeMethod which is Dynamic
 LoadClass which is Dynamic
 Methods of Throwables:
+
+Method: throwIfInstanceOf
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Casts which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
+at PC = 15
+at line 78
+Feature Category: Casts which is Dynamic
+
+Method: getSizeMethod
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 37
+at line 537
+Feature Category: InvokeMethod which is Dynamic
+
+Method: getCauseAs
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Casts which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
+at PC = 5
+at line 328
+Feature Category: Casts which is Dynamic
 
 Method: getJLA
 Reachable Reflect Methods Count: 2
@@ -294,28 +309,6 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 25
 at line 496
 Feature Category: InvokeMethod which is Dynamic
-
-Method: getSizeMethod
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 37
-at line 537
-Feature Category: InvokeMethod which is Dynamic
-
-Method: throwIfInstanceOf
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Casts which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
-at PC = 15
-at line 78
-Feature Category: Casts which is Dynamic
 
 Method: invokeAccessibleNonThrowingMethod
 Reachable Reflect Methods Count: 1
@@ -338,23 +331,48 @@ Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,
 at PC = 4
 at line 550
 Feature Category: LoadClass which is Dynamic
-
-Method: getCauseAs
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Casts which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
-at PC = 5
-at line 328
-Feature Category: Casts which is Dynamic
+-----------------------------
+Class: ListenerCallQueue$PerListenerQueue
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ExecutionList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkFutureAdapters$ListenableFutureAdapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Predicates
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Predicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSetMultimap$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: ImmediateFuture
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Ordering
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MoreObjects$ToStringHelper
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -376,100 +394,6 @@ at PC = 76
 at line 285
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: FuturesGetChecked$GetCheckedTypeValidatorHolder
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-LoadClass which is Dynamic
-Methods of FuturesGetChecked$GetCheckedTypeValidatorHolder:
-
-Method: getBestValidator
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 3
-at line 196
-Feature Category: LoadClass which is Dynamic
------------------------------
-Class: Futures
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Futures$InCompletionOrderState
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Futures$FutureCombiner$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CombinedFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Futures$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingExecutorService
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingObject
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MoreObjects$ToStringHelper
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicates
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingFluentFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multimaps
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FakeTimeLimiter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSetMultimap$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ExecutionSequencer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ExecutionSequencer$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Collections2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ExecutionSequencer$TaskNonReentrantExecutor
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ObjectArrays
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -488,11 +412,81 @@ at PC = 2
 at line 52
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: ExecutionSequencer$2
+Class: FuturesGetChecked$GetCheckedTypeValidatorHolder
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of FuturesGetChecked$GetCheckedTypeValidatorHolder:
+
+Method: getBestValidator
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 3
+at line 196
+Feature Category: LoadClass which is Dynamic
+-----------------------------
+Class: Collections2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Sets
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Futures
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Futures$InCompletionOrderState
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CombinedFuture
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Futures$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Futures$FutureCombiner$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingExecutorService
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingObject
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingFluentFuture
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ExecutionSequencer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ExecutionSequencer$TaskNonReentrantExecutor
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FakeTimeLimiter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CycleDetectingLockFactory$WithExplicitOrdering
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CycleDetectingLockFactory$LockGraphNode
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -504,27 +498,11 @@ Class: CycleDetectingLockFactory$ExampleStackTrace
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CycleDetectingLockFactory$LockGraphNode
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CycleDetectingLockFactory$WithExplicitOrdering
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: CombinedFuture$CombinedFutureInterruptibleTask
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: AggregateFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CombinedFuture$AsyncCallableInterruptibleTask
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CombinedFuture$CallableInterruptibleTask
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -552,11 +530,11 @@ Class: ClosingFuture$Combiner
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ClosingFuture$Combiner5$2
+Class: ClosingFuture$Combiner5$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ClosingFuture$Combiner5$1
+Class: ClosingFuture$Combiner5$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -568,15 +546,11 @@ Class: ClosingFuture$Combiner4$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ClosingFuture$Combiner3$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ClosingFuture$Combiner3$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FluentIterable
+Class: ClosingFuture$Combiner3$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -588,7 +562,11 @@ Class: ClosingFuture$Combiner2$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractTransformFuture$TransformFuture
+Class: AbstractCatchingFuture
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FluentIterable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -596,23 +574,15 @@ Class: AbstractTransformFuture
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableLongArray
+Class: AbstractTransformFuture$TransformFuture
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableLongArray$Builder
+Class: AbstractService$4
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractScheduledService$ServiceDelegate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractScheduledService
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractIdleService
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -656,18 +626,6 @@ Class: AbstractExecutionThreadService$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractExecutionThreadService
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractCatchingFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractCatchingFuture$CatchingFuture
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Types
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -685,10 +643,6 @@ Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java
 at PC = 2
 at line 543
 Feature Category: Array which is Dynamic
------------------------------
-Class: Types$WildcardTypeImpl
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: Types$TypeVariableImpl
 reachable Reflect Calls: 2
@@ -713,6 +667,14 @@ at PC = 31
 at line 450
 Feature Category: Proxy which is Dynamic
 -----------------------------
+Class: AbstractCatchingFuture$CatchingFuture
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Types$ParameterizedTypeImpl
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Types$TypeVariableInvocationHandler
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -720,17 +682,6 @@ Direct Features:
 ManipulateMetaObject which is Dynamic
 InvokeMethod which is Dynamic
 Methods of Types$TypeVariableInvocationHandler:
-
-Method: <clinit>
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
-at PC = 41
-at line 368
-Feature Category: ManipulateMetaObject which is Dynamic
 
 Method: invoke
 Reachable Reflect Methods Count: 1
@@ -742,8 +693,19 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 41
 at line 395
 Feature Category: InvokeMethod which is Dynamic
+
+Method: <clinit>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
+at PC = 41
+at line 368
+Feature Category: ManipulateMetaObject which is Dynamic
 -----------------------------
-Class: Types$ParameterizedTypeImpl
+Class: Types$WildcardTypeImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -838,15 +800,11 @@ Class: TypeToken$TypeCollector
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TypeToken$TypeCollector$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: TypeToken$TypeCollector$4
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TypeToken$3
+Class: TypeToken$TypeCollector$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -855,6 +813,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: TypeToken$4
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeToken$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -894,10 +856,6 @@ at PC = 6
 at line 376
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: TypeResolver$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Invokable
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
@@ -905,28 +863,6 @@ Direct Features:
 ManipulateMetaObject which is Dynamic
 LoadClass which is Dynamic
 Methods of Invokable:
-
-Method: setAccessible
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 5
-at line 116
-Feature Category: ManipulateMetaObject which is Dynamic
-
-Method: trySetAccessible
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 5
-at line 125
-Feature Category: ManipulateMetaObject which is Dynamic
 
 Method: initAnnotatedTypeExists
 Reachable Reflect Methods Count: 1
@@ -938,12 +874,30 @@ Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String)
 at PC = 2
 at line 558
 Feature Category: LoadClass which is Dynamic
+
+Method: setAccessible
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
+at PC = 5
+at line 116
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Method: trySetAccessible
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
+at PC = 5
+at line 125
+Feature Category: ManipulateMetaObject which is Dynamic
 -----------------------------
 Class: TypeResolver$TypeTable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TypeResolver$TypeTable$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -952,6 +906,22 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Primitives
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeResolver$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableLongArray
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableLongArray$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeResolver$TypeTable$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -985,11 +955,19 @@ Class: MutableTypeToInstanceMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: ForwardingMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ImmutableTypeToInstanceMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingMap
+Class: Splitter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ClassPath
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1011,7 +989,7 @@ at PC = 8
 at line 379
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: Splitter
+Class: ClassPath$LocationInfo
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1024,14 +1002,6 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: CharSource
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ClassPath
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ClassPath$LocationInfo
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1111,27 +1081,7 @@ Class: ImmutableDoubleArray$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ClosingFuture$closeQuietly(Ljava$lang$AutoCloseable:Ljava$util$concurrent$Executor:)V:7$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: WrappingExecutorService$wrapTask(Ljava$lang$Runnable:)Ljava$lang$Runnable::11$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: SimpleTimeLimiter$1$invoke(Ljava$lang$Object:Ljava$lang$reflect$Method:]Ljava$lang$Object:)Ljava$lang$Object::6$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MediaType$Tokenizer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ImmutableListMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: InternetDomainName
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1143,11 +1093,23 @@ Class: Joiner$MapJoiner
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: MediaType$Tokenizer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InternetDomainName
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Multimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: ImmutableListMultimap$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1293,7 +1255,11 @@ Class: Traverser
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Callables$threadRenaming(Ljava$util$concurrent$Callable:Lcom$google$common$base$Supplier:)Ljava$util$concurrent$Callable::12$Lambda
+Class: Callables$threadRenaming(Ljava$lang$Runnable:Lcom$google$common$base$Supplier:)Ljava$lang$Runnable::12$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LittleEndianDataOutputStream
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1301,11 +1267,15 @@ Class: ByteSource$AsCharSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Files$FileByteSink
+Class: Closer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Files
+Class: FileBackedOutputStream
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CountingOutputStream
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1313,7 +1283,19 @@ Class: Files$FileByteSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Closer
+Class: Files
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CharSource$CharSequenceCharSource
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CharSource$CharSequenceCharSource$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1335,23 +1317,7 @@ at PC = 19
 at line 295
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: CharSource$CharSequenceCharSource
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LittleEndianDataOutputStream
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CharSource$CharSequenceCharSource$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractIterator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Streams
+Class: Files$FileByteSink
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1359,7 +1325,7 @@ Class: ByteSource$SlicedByteSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ByteSource$ConcatenatedByteSource
+Class: CharSource$StringCharSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1367,19 +1333,11 @@ Class: CharSource$ConcatenatedCharSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CharSource$StringCharSource
+Class: Streams
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Closeables
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CountingOutputStream
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FileBackedOutputStream
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1388,6 +1346,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: BaseEncoding$StandardBaseEncoding$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ByteSource$ConcatenatedByteSource
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1431,10 +1393,6 @@ at PC = 49
 at line 188
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: HashingOutputStream
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Striped64$1
 reachable Reflect Calls: 3
 Class reaches Reflection Calls directly
@@ -1467,11 +1425,23 @@ at PC = 52
 at line 305
 Feature Category: Casts which is Dynamic
 -----------------------------
+Class: HashingOutputStream
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LittleEndianByteArray$UnsafeByteArray$getUnsafe()Lsun$misc$Unsafe::5$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Funnels$SequentialFunnel
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: BloomFilterStrategies$LockFreeBitArray
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: BloomFilter
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1491,11 +1461,31 @@ Class: EdgesConnecting
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: UndirectedGraphConnections
+Class: Traverser$Traversal$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: UndirectedMultiNetworkConnections
+Class: Traverser$Traversal$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Traverser$Traversal$4
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Traverser$Traversal$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: UndirectedMultiNetworkConnections$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MultiEdgesConnecting
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: UndirectedGraphConnections
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1503,15 +1493,11 @@ Class: ElementOrder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: BloomFilter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: EndpointPair
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: MapIteratorCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableValueGraph$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1527,7 +1513,7 @@ Class: StandardMutableNetwork
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractValueGraph
+Class: EndpointPair
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1535,11 +1521,19 @@ Class: Graphs
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: AbstractValueGraph
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MapRetrievalCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: StandardMutableValueGraph
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Traverser$Traversal$1
+Class: ImmutableNetwork$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1547,59 +1541,11 @@ Class: IncidentEdgeSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Traverser$Traversal$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedMultiNetworkConnections
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Traverser$Traversal$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MultiEdgesConnecting
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: MultiEdgesConnecting$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: DirectedGraphConnections
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableNetwork
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Traverser$Traversal$4
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableValueGraph$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: UndirectedMultiNetworkConnections$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ImmutableValueGraph
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: GraphsBridgeMethods
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableGraph
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingGraph
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1611,31 +1557,7 @@ Class: MapIteratorCache$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: InvalidatableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Graphs$TransposedNetwork
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: HashMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableGraph$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingValueGraph
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractNetwork
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractGraph
+Class: ForwardingGraph
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1643,87 +1565,15 @@ Class: StandardMutableGraph
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EndpointPairIterator
+Class: ImmutableNetwork
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EndpointPairIterator$Directed
+Class: AbstractNetwork
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EndpointPair$Ordered
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: EndpointPair$Unordered
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractDirectedNetworkConnections
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$NodeConnection$Pred
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$4
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$NodeConnection$Succ
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$3$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedMultiNetworkConnections$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$3$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$2$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractBaseGraph
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractNetwork$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: EndpointPairIterator$Undirected
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractNetwork$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractBaseGraph$2
+Class: Graphs$TransposedNetwork
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1731,11 +1581,119 @@ Class: Graphs$TransposedGraph$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SubscriberRegistry$MethodIdentifier
+Class: ForwardingValueGraph
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SubscriberRegistry
+Class: ImmutableGraph$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: GraphsBridgeMethods
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableGraph
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractGraph
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EndpointPairIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EndpointPairIterator$Undirected
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EndpointPairIterator$Directed
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EndpointPair$Unordered
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EndpointPair$Ordered
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractDirectedNetworkConnections
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InvalidatableSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedMultiNetworkConnections$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$NodeConnection$Succ
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$NodeConnection$Pred
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: HashMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$3$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$3
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$2$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$2$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$3$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$4
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DirectedGraphConnections$1$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractBaseGraph
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractBaseGraph$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EventBus
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1743,7 +1701,19 @@ Class: CacheLoader
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SubscriberRegistry$2
+Class: SubscriberRegistry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableNetwork$adjacentNodeFn(Lcom$google$common$graph$Network:Ljava$lang$Object:)Lcom$google$common$base$Function::2$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractBaseGraph$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractDirectedNetworkConnections$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1777,11 +1747,7 @@ at PC = 19
 at line 85
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: EventBus
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Subscriber$SynchronizedSubscriber
+Class: AbstractNetwork$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1789,7 +1755,11 @@ Class: Dispatcher$PerThreadQueuedDispatcher
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractBaseGraph$1
+Class: AbstractNetwork$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractValueGraph$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1797,27 +1767,11 @@ Class: Dispatcher$LegacyAsyncDispatcher
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractDirectedNetworkConnections$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: HashMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CacheBuilder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DirectedGraphConnections$2$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: UsingToStringOrdering
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ArrayBasedEscaperMap
+Class: SubscriberRegistry$MethodIdentifier
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1825,7 +1779,23 @@ Class: CharEscaperBuilder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableNetwork$adjacentNodeFn(Lcom$google$common$graph$Network:Ljava$lang$Object:)Lcom$google$common$base$Function::2$Lambda
+Class: CacheBuilder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SubscriberRegistry$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ArrayBasedEscaperMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeTraverser$PostOrderIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeTraverser$PreOrderIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1833,11 +1803,15 @@ Class: TreeTraverser$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeTraverser$BreadthFirstIterator
+Class: TreeTraverser$3$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeTraverser$3$1
+Class: TreeTraverser$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: UsingToStringOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1853,19 +1827,11 @@ Class: Multisets
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeRangeSet$SubRangeSetRangesByLowerBound
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeSet$SubRangeSetRangesByLowerBound$2
+Class: TreeTraverser$BreadthFirstIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Range
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RangeSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1877,7 +1843,15 @@ Class: TreeRangeSet$RangesByUpperBound$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeRangeSet
+Class: AbstractNavigableMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeRangeSet$SubRangeSetRangesByLowerBound
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSortedMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1885,11 +1859,23 @@ Class: TreeRangeSet$ComplementRangesByLowerBound
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractRangeSet
+Class: TreeRangeSet$ComplementRangesByLowerBound$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractNavigableMap
+Class: TreeRangeSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeRangeMap$SubRangeMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeRangeMap$SubRangeMap$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1901,27 +1887,7 @@ Class: TreeRangeSet$AsRanges
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableSortedMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: TreeRangeMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeMap$SubRangeMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeSet$ComplementRangesByLowerBound$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$KeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1929,19 +1895,7 @@ Class: TreeRangeSet$ComplementRangesByLowerBound$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeRangeMap$SubRangeMap$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: TreeRangeMap$SubRangeMap$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeMap$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapEntry
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1949,15 +1903,19 @@ Class: TreeRangeSet$RangesByUpperBound$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: TreeRangeSet$SubRangeSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: TreeRangeSet$SubRangeSetRangesByLowerBound$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: GeneralRange
+Class: TreeRangeSet$SubRangeSetRangesByLowerBound$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeMultiset$AvlNode
+Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1965,23 +1923,19 @@ Class: TreeMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeTraverser$1
+Class: TreeMultiset$AvlNode
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractSortedMultiset
+Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeRangeMap$AsMapOfRanges
+Class: ImmutableRangeSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeRangeSet$SubRangeSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeTraverser$PostOrderIterator
+Class: RangeSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1997,7 +1951,7 @@ Class: TreeBasedTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeTraverser$PreOrderIterator
+Class: GeneralRange
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2005,11 +1959,23 @@ Class: TransformedIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TransformedListIterator
+Class: AbstractNetwork$edgeIncidentNodesMap(Lcom$google$common$graph$Network:)Ljava$util$Map::12$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multisets$AbstractEntry
+Class: AbstractMapEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractSortedMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$KeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractRangeSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2017,103 +1983,7 @@ Class: ForwardingTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TreeBasedTable$TreeRow
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Tables$AbstractCell
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Tables$TransformedTable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Tables
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$IteratorBasedAbstractMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Maps$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeRangeMap$SubRangeMap$SubRangeMapAsMap$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableRangeSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TableCollectors
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedCollection
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedSortedMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TreeBasedTable$createColumnKeyIterator()Ljava$util$Iterator::14$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedSortedSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedTable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedObject
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$Values
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedNavigableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Synchronized$SynchronizedEntry
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Tables$TransformedTable$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2125,27 +1995,51 @@ Class: Tables$TransposeTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Synchronized$SynchronizedNavigableMap
+Class: Maps$Values
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TableCollectors$ImmutableTableCollectorState
+Class: Tables$TransformedTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableTable
+Class: Tables$TransformedTable$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableTable$Builder
+Class: Tables$AbstractCell
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Synchronized$SynchronizedAsMapEntries$1$1
+Class: Tables
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Synchronized$SynchronizedAsMapEntries
+Class: TreeRangeMap$AsMapOfRanges
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$IteratorBasedAbstractMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TopKSelector
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TableCollectors
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TransformedListIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Synchronized$SynchronizedObject
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeBasedTable$TreeRow
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2157,7 +2051,7 @@ Class: StandardTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Synchronized$SynchronizedAsMap
+Class: Multisets$AbstractEntry
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2165,63 +2059,67 @@ Class: Maps$SortedKeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TopKSelector
+Class: Synchronized$SynchronizedTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$5
+Class: Synchronized$SynchronizedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$4
+Class: Synchronized$SynchronizedSetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$3Splitr
+Class: Synchronized$SynchronizedSortedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$3
+Class: Synchronized$SynchronizedCollection
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$2Splitr
+Class: Synchronized$SynchronizedList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$1
+Class: TableCollectors$ImmutableTableCollectorState
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$RowMap$EntrySet
+Class: Synchronized$SynchronizedMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$TableSet
+Class: Synchronized$SynchronizedMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$2
+Class: ImmutableTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Streams$1Splitr
+Class: Synchronized$SynchronizedListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$ColumnMap$ColumnMapEntrySet
+Class: Synchronized$SynchronizedMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$Row$1
+Class: Synchronized$SynchronizedSortedMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$ColumnKeySet
+Class: Synchronized$SynchronizedAsMapEntries
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$ColumnMap$ColumnMapValues
+Class: Synchronized$SynchronizedAsMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Synchronized$SynchronizedAsMapEntries$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2229,11 +2127,67 @@ Class: Streams$4Splitr
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Synchronized$SynchronizedEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableTable$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Synchronized$SynchronizedNavigableSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$1Splitr
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Synchronized$SynchronizedNavigableMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TreeBasedTable$createColumnKeyIterator()Ljava$util$Iterator::14$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TableCollectors$toImmutableTable(Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::29$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$RowMap$EntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: StandardTable$Row$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TableCollectors$toTable(Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$BinaryOperator:Ljava$util$function$Supplier:)Ljava$util$stream$Collector::32$Lambda
+Class: StandardTable$Row$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$ColumnMap$ColumnMapValues
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$ColumnMap$ColumnMapEntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$2Splitr
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2245,19 +2199,11 @@ Class: StandardTable$Column$KeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Streams$4
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: StandardTable$Column$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StandardTable$Column$Values
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StandardTable$Column$EntrySetIterator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StandardRowSortedTable$RowSortedMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2273,11 +2219,27 @@ Class: SortedMultisets$ElementSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SortedLists
+Class: StandardTable$Column$Values
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: SortedMultisets$NavigableElementSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$Column$EntrySetIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$ColumnKeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardTable$ColumnKeyIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SortedLists
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2289,15 +2251,7 @@ Class: SparseImmutableTable
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SingletonImmutableBiMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$PowerSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractIndexedListIterator
+Class: Streams$5
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2305,31 +2259,35 @@ Class: StandardTable$Column$EntrySetIterator$1EntryImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: SingletonImmutableTable
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StandardRowSortedTable$RowSortedMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SingletonImmutableSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Streams$3Splitr
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Sets$SubSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StandardTable$ColumnKeyIterator
+Class: Sets$SubSet$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$FilteredCollection
+Class: Sets$PowerSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$FilteredSortedSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$FilteredNavigableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$FilteredSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$CartesianSet$1
+Class: CollectCollectors
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2341,19 +2299,11 @@ Class: Sets$DescendingSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Sets$CartesianSet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Sets$5
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$CartesianSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$4
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2361,23 +2311,23 @@ Class: Sets$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$4$1
+Class: Sets$FilteredSortedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$3$1
+Class: Sets$FilteredNavigableSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$2
+Class: CartesianList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$2$1
+Class: Sets$CartesianSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Sets$SubSet$1
+Class: Sets$5$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2389,7 +2339,15 @@ Class: ForwardingSortedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SingletonImmutableSet
+Class: Sets$4
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$4$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SingletonImmutableBiMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2397,15 +2355,11 @@ Class: SingletonImmutableList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SingletonImmutableTable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ReverseOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectCollectors
+Class: Sets$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2413,79 +2367,15 @@ Class: RegularImmutableTable$CellSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: RegularImmutableMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableMap$Values
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$5$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$2$stream()Ljava$util$stream$Stream::18$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$5$1$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DenseImmutableTable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableBiMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Sets$2$parallelStream()Ljava$util$stream$Stream::18$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableBiMap$Inverse$InverseEntrySet$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableAsList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableBiMap$Inverse
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableMapEntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: IndexedImmutableSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: JdkBackedImmutableBiMap
+Class: Sets$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMapKeySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RegularImmutableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedMultiset
+Class: Sets$FilteredSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2497,19 +2387,55 @@ Class: ImmutableSortedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: RegularImmutableSortedMultiset
+Class: RegularImmutableSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: JdkBackedImmutableMap
+Class: RegularImmutableMap$Values
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: JdkBackedImmutableMultiset
+Class: RegularImmutableMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: NullsLastOrdering
+Class: Sets$2$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$3$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$5$1$1$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$1$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RegularImmutableBiMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DenseImmutableTable
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RegularImmutableBiMap$Inverse
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMapEntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractIndexedListIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableAsList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2517,7 +2443,51 @@ Class: RegularImmutableAsList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMultiset$ElementSet
+Class: RegularImmutableBiMap$Inverse$InverseEntrySet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ContiguousSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSortedAsList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Collections2$FilteredCollection
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RegularContiguousSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EmptyContiguousSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMapKeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CompactHashSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$2$stream()Ljava$util$stream$Stream::18$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: RegularImmutableMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Sets$2$parallelStream()Ljava$util$stream$Stream::18$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkBackedImmutableMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2539,11 +2509,19 @@ at PC = 5
 at line 188
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: MutableClassToInstanceMap$2
+Class: ImmutableSortedMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ComparatorOrdering
+Class: RegularImmutableSortedMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkBackedImmutableMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MutableClassToInstanceMap$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2555,7 +2533,7 @@ Class: Multisets$ViewMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ExplicitOrdering
+Class: Multisets$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2567,15 +2545,7 @@ Class: Multisets$FilteredMultiset$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multisets$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NullsFirstOrdering
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ByFunctionOrdering
+Class: ImmutableMultiset$ElementSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2583,19 +2553,11 @@ Class: Multisets$DecreasingCount
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CompactHashSet
+Class: NullsLastOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CompoundOrdering
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ContiguousSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LexicographicalOrdering
+Class: NullsFirstOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2607,31 +2569,7 @@ Class: Multisets$4$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EmptyContiguousSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedAsList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Multisets$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multisets$2$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CartesianList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multisets$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multisets$3$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2639,7 +2577,27 @@ Class: Multisets$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multisets$4$1
+Class: ComparatorOrdering
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multisets$3
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$UnmodifiableSetMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ExplicitOrdering
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkBackedImmutableBiMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$UnmodifiableMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2647,11 +2605,11 @@ Class: ForwardingMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multisets$EntrySet
+Class: ByFunctionOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multimaps$CustomMultimap
+Class: CompoundOrdering
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2663,6 +2621,30 @@ Class: Multimaps$MapMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Multimaps$MapMultimap$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$MapMultimap$1$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$Keys
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LexicographicalOrdering
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$Keys$1$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$CustomMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Multimaps$CustomListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -2671,27 +2653,27 @@ Class: Multimaps$CustomSetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Multisets$3$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Multimaps$CustomSortedSetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multimaps$MapMultimap$1
+Class: Multiset$forEach(Ljava$util$function$Consumer:)V:12$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multimaps$Keys
+Class: AbstractMapBasedMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multisets$2$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Multisets$MultisetIteratorImpl
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multimaps$Keys$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2703,15 +2685,7 @@ Class: Multimaps$AsMap$EntrySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$UnmodifiableEntries
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$WrappedCollection
+Class: Multisets$4$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2719,7 +2693,23 @@ Class: AbstractMapBasedMultimap$WrappedNavigableSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Multisets$EntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multimaps$UnmodifiableListMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractMapBasedMultimap$WrappedCollection
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: AbstractMapBasedMultimap$WrappedSortedSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Multisets$addAllImpl(Lcom$google$common$collect$Multiset:Lcom$google$common$collect$Multiset:)Z:18$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2727,7 +2717,7 @@ Class: AbstractMapBasedMultimap$WrappedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multimaps$TransformedEntriesMultimap
+Class: Maps$UnmodifiableEntries
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2735,11 +2725,11 @@ Class: Multimaps$Entries
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multimaps$MapMultimap$1$1
+Class: Multimaps$TransformedEntriesMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredKeyMultimap
+Class: Multimaps$TransformedEntriesListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2751,11 +2741,23 @@ Class: MinMaxPriorityQueue$QueueIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multisets$addAllImpl(Lcom$google$common$collect$Multiset:Lcom$google$common$collect$Multiset:)Z:18$Lambda
+Class: Maps$ValueDifferenceImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredEntryMultimap
+Class: MinMaxPriorityQueue$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MinMaxPriorityQueue$Heap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FilteredKeyMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FilteredKeySetMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2763,23 +2765,15 @@ Class: MoreCollectors$ToOptionalState
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Multiset$forEachEntry(Ljava$util$function$ObjIntConsumer:)V:12$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$UnmodifiableNavigableMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingSortedMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Multimap$forEach(Ljava$util$function$BiConsumer:)V:12$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Maps$TransformedEntriesSortedMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$TransformedEntriesNavigableMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FilteredKeyListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2787,7 +2781,23 @@ Class: Maps$TransformedEntriesMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: FilteredEntryMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Maps$NavigableKeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$NavigableAsMapView
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableEnumMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2795,11 +2805,27 @@ Class: Maps$IteratorBasedAbstractMap$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Maps$AbstractFilteredMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$FilteredKeyMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$FilteredEntrySortedMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$FilteredEntrySortedMap$SortedKeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Maps$FilteredEntryNavigableMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$AbstractFilteredMap
+Class: Multimap$forEach(Ljava$util$function$BiConsumer:)V:12$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2815,11 +2841,7 @@ Class: Maps$FilteredEntryMap$KeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$MapDifferenceImpl
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$FilteredEntryNavigableMap$1
+Class: ForwardingMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2827,15 +2849,11 @@ Class: Maps$FilteredMapValues
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$NavigableAsMapView
+Class: Maps$FilteredEntryNavigableMap$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$AsMapView
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$SortedAsMapView
+Class: Maps$FilteredEntryMap$EntrySet$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2847,31 +2865,15 @@ Class: Maps$FilteredEntryBiMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$TransformedEntriesNavigableMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$UnmodifiableEntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Maps$DescendingMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$DescendingMap$1EntrySetImpl
+Class: Maps$AsMapView
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$ValueDifferenceImpl
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$BiMapConverter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$9
+Class: Maps$SortedAsMapView
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2879,11 +2881,7 @@ Class: Maps$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MinMaxPriorityQueue$Heap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MinMaxPriorityQueue$Builder
+Class: Maps$UnmodifiableEntrySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2891,47 +2889,15 @@ Class: Maps$10
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Maps$2
+Class: MoreCollectors$<clinit>()V:10$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MapMakerInternalMap
+Class: Maps$UnmodifiableNavigableMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MapMakerInternalMap$WriteThroughEntry
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$8
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$7
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableEnumMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$FilteredEntrySortedMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MapMakerInternalMap$Segment
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Equivalence
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$FilteredKeyMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Maps$FilteredEntrySortedMap$SortedKeySet
+Class: ForwardingSortedMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2939,7 +2905,43 @@ Class: Maps$11
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Equivalence
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Maps$12
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$8
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MapMakerInternalMap$Segment
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$9
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MoreCollectors$<clinit>()V:56$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MapMakerInternalMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$BiMapConverter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: MapMakerInternalMap$WriteThroughEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Maps$7
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2959,7 +2961,11 @@ Class: Lists$ReverseList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Lists$ReverseList$1
+Class: Lists$TransformingSequentialList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Lists$TransformingSequentialList$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2971,7 +2977,7 @@ Class: LinkedListMultimap$ValueForKeyIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Lists$AbstractListWrapper
+Class: Lists$ReverseList$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -2979,35 +2985,7 @@ Class: LinkedListMultimap$DistinctKeyIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Lists$Partition
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: LinkedListMultimap$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LinkedHashMultimap$ValueEntry
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LinkedHashMultimap$ValueSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LinkedHashMultimap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Lists$TransformingSequentialList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Lists$TransformingSequentialList$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JdkBackedImmutableBiMap$InverseEntries
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3015,11 +2993,31 @@ Class: LinkedListMultimap$1KeySetImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: LinkedListMultimap$1EntriesImpl
+Class: LinkedListMultimap$1ValuesImpl$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$1
+Class: LinkedHashMultimap$ValueEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LinkedHashMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Lists$Partition
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkBackedImmutableBiMap$InverseEntries
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Lists$AbstractListWrapper
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LinkedHashMultimap$ValueSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3027,19 +3025,15 @@ Class: Iterators$MergingIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$9
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: Iterators$ConcatenatedIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$8
+Class: Iterators$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: LinkedHashMultimap$valueSpliterator()Ljava$util$Spliterator::4$Lambda
+Class: Iterators$9
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3047,11 +3041,11 @@ Class: Iterators$7
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$2
+Class: Iterators$6
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$6
+Class: Iterators$8
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3059,43 +3053,7 @@ Class: Iterators$5
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterators$4
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$9$iterator()Ljava$util$Iterator::4$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableMapValues
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JdkBackedImmutableSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$6
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$6$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$3
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LinkedListMultimap$1ValuesImpl$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedSet$Builder
+Class: Iterators$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3103,11 +3061,43 @@ Class: Iterators$10
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableCollection$Builder
+Class: LinkedListMultimap$1EntriesImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Iterators$PeekingImpl
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$9$iterator()Ljava$util$Iterator::4$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$6$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$6
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JdkBackedImmutableSet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LinkedHashMultimap$valueSpliterator()Ljava$util$Spliterator::4$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMapValues
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterators$4
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3123,51 +3113,11 @@ Class: LinkedHashMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterables$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedMap$1EntrySet$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: AbstractMapBasedMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Iterables$5
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$7
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$5$forEach(Ljava$util$function$Consumer:)V:14$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$8
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSetMultimap$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSet$Indexed
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedAsList$spliterator()Ljava$util$Spliterator::16$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Iterables$UnmodifiableIterable
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSet$RegularSetBuilderImpl
+Class: ImmutableSortedMap$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3175,7 +3125,47 @@ Class: ImmutableSortedSet$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableRangeSet$ComplementRanges
+Class: ImmutableCollection$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSortedSet$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSortedMap$1EntrySet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DescendingImmutableSortedMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSetMultimap$EntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMultimap$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSortedMap$1EntrySet$1$spliterator()Ljava$util$Spliterator::8$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSet$RegularSetBuilderImpl
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableSet$Indexed
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IndexedImmutableSet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: IndexedImmutableSet$spliterator()Ljava$util$Spliterator::8$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3187,23 +3177,11 @@ Class: ImmutableRangeSet$AsSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableRangeSet$AsSet$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ImmutableRangeSet$AsSet$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableRangeMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableRangeMap$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DescendingImmutableSortedSet
+Class: Iterables$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3211,7 +3189,27 @@ Class: Iterables$4
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMultimap$Builder
+Class: ImmutableRangeSet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$8
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableRangeMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$UnmodifiableIterable
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableRangeMap$Builder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3219,7 +3217,19 @@ Class: Iterables$4$forEach(Ljava$util$function$Consumer:)V:14$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMultimap$Keys
+Class: Iterables$7
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableRangeMap$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableRangeSet$ComplementRanges
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Iterables$5
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3227,19 +3237,23 @@ Class: ImmutableMultiset$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableRangeSet$1
+Class: Iterables$5$forEach(Ljava$util$function$Consumer:)V:14$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableSortedMap$Builder
+Class: ImmutableMultimap$Keys
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableRangeSet$AsSet$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMultimap$EntryCollection
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: ImmutableMultiset$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedMap$1EntrySet$1$spliterator()Ljava$util$Spliterator::8$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3251,15 +3265,7 @@ Class: ImmutableMultimap$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMultimap$EntryCollection
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableMultimap$Values
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableMultimap$2
+Class: DescendingImmutableSortedSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3267,7 +3273,7 @@ Class: ImmutableMapValues$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMapValues$spliterator()Ljava$util$Spliterator::10$Lambda
+Class: ImmutableMap$MapViewOfValuesAsSingletonSets$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3279,27 +3285,7 @@ Class: ImmutableMap$MapViewOfValuesAsSingletonSets
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ImmutableMap$MapViewOfValuesAsSingletonSets$1$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DescendingImmutableSortedMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableRangeMap$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableList$ReverseImmutableList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedMultiset$toImmutableSortedMultiset(Ljava$util$Comparator:Ljava$util$function$Function:Ljava$util$function$ToIntFunction:)Ljava$util$stream$Collector::23$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableList$1
+Class: ImmutableMultimap$Values
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3307,43 +3293,15 @@ Class: ImmutableList$SubList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: ImmutableSortedAsList$spliterator()Ljava$util$Spliterator::16$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMultimap$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ImmutableMap$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableBiMap$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: HashBiMap$Inverse
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableSortedMap$fromEntries(Ljava$util$Comparator:Z]Ljava$util$Map$Entry:I)Lcom$google$common$collect$ImmutableSortedMap::152$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: HashBiMap$1$MapEntry
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingSortedMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DescendingMultiset
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: HashBiMap$Inverse$1$InverseEntry
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ImmutableList$spliterator()Ljava$util$Spliterator::8$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3369,7 +3327,63 @@ Class: ImmutableClassToInstanceMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FluentIterable$1
+Class: ImmutableBiMap$Builder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableMapValues$spliterator()Ljava$util$Spliterator::10$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: HashBiMap$Inverse$1$InverseEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: HashBiMap$Inverse
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: HashBiMap$1$MapEntry
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingSortedMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: DescendingMultiset
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableList$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ImmutableList$ReverseImmutableList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingSetMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingNavigableMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingListIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingListMultimap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingList
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3377,7 +3391,7 @@ Class: FluentIterable$3$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingListIterator
+Class: FilteredMultimapValues
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3389,27 +3403,7 @@ Class: FilteredKeySetMultimap$EntrySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredMultimapValues
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FluentIterable$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ForwardingList
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FilteredEntryMultimap$AsMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FilteredEntryMultimap$AsMap$1KeySetImpl
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FilteredEntryMultimap$AsMap$1EntrySetImpl$1
+Class: ImmutableList$spliterator()Ljava$util$Spliterator::8$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3417,27 +3411,31 @@ Class: FilteredEntryMultimap$Keys
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredEntryMultimap$AsMap$1ValuesImpl
+Class: FluentIterable$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingMultiset$StandardElementSet
+Class: FilteredEntryMultimap$Keys$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EvictingQueue
+Class: FluentIterable$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingNavigableMap$StandardDescendingMap
+Class: FilteredEntryMultimap$AsMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingNavigableMap$StandardDescendingMap$1
+Class: FilteredEntryMultimap$AsMap$1EntrySetImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingNavigableMap
+Class: FluentIterable$2$iterator()Ljava$util$Iterator::9$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: FilteredEntryMultimap$AsMap$1EntrySetImpl$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3449,15 +3447,15 @@ Class: EnumBiMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: EnumHashBiMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: AbstractBiMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredEntryMultimap$Keys$1
+Class: EnumHashBiMap
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingMultiset$StandardElementSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3469,23 +3467,11 @@ Class: DenseImmutableTable$ImmutableArrayMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredEntryMultimap$Keys$1$removeEntriesIf(Lcom$google$common$base$Predicate:)Z:8$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FluentIterable$2$iterator()Ljava$util$Iterator::9$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ConcurrentHashMultiset
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ConcurrentHashMultiset$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ConcurrentHashMultiset$1
+Class: ConcurrentHashMultiset$3
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3501,23 +3487,27 @@ Class: CompactHashing
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$TransformedCollection
+Class: ConcurrentHashMultiset$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$OrderedPermutationCollection
+Class: FilteredEntryMultimap$AsMap$1KeySetImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$PermutationCollection
+Class: FilteredEntryMultimap$AsMap$1ValuesImpl
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$OrderedPermutationIterator
+Class: FilteredEntryMultimap$Keys$1$removeEntriesIf(Lcom$google$common$base$Predicate:)Z:8$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$PermutationIterator
+Class: EvictingQueue
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ComparisonChain$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3525,7 +3515,7 @@ Class: CollectSpliterators$1WithCharacteristics
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectSpliterators$FlatMapSpliterator
+Class: CollectSpliterators$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3533,15 +3523,27 @@ Class: CollectSpliterators$FlatMapSpliteratorOfPrimitive
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectSpliterators$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: CollectSpliterators$1Splitr
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: CollectSpliterators$FlatMapSpliterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectSpliterators$1WithCharacteristics$forEachRemaining(Ljava$util$function$Consumer:)V:9$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: CartesianList$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractMultiset$EntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectSpliterators$1$tryAdvance(Ljava$util$function$Consumer:)Z:9$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3567,19 +3569,7 @@ Class: ArrayTable$ArrayMap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Collections2$FilteredCollection$removeAll(Ljava$util$Collection:)Z:7$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMultiset$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ComparisonChain$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Collections2$FilteredCollection$retainAll(Ljava$util$Collection:)Z:2$Lambda
+Class: CollectCollectors$EnumMapAccumulator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3587,23 +3577,35 @@ Class: AbstractTable$CellSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractTable$Values
+Class: Collections2$OrderedPermutationCollection
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ArrayTable$2
+Class: Collections2$OrderedPermutationIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ArrayListMultimap
+Class: Collections2$PermutationCollection
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectCollectors$EnumMapAccumulator
+Class: Collections2$PermutationIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractMultimap$Values
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Collections2$TransformedCollection
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractMultimap$EntrySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractMapBasedMultiset$MapBasedMultisetIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3615,27 +3617,19 @@ Class: AbstractMapBasedMultiset$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectSpliterators$1WithCharacteristics$tryAdvance(Ljava$util$function$Consumer:)Z:9$Lambda
+Class: AbstractMapBasedMultiset$2$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractMapBasedMultiset$MapBasedMultisetIterator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractNavigableMap$DescendingMap
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CollectSpliterators$1$tryAdvance(Ljava$util$function$Consumer:)Z:9$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$WrappedCollection$WrappedIterator
+Class: Collections2$FilteredCollection$removeAll(Ljava$util$Collection:)Z:7$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractMapBasedMultimap$WrappedList
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractMapBasedMultimap$WrappedCollection$WrappedIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3655,11 +3649,23 @@ Class: AbstractMapBasedMultimap$AsMap$AsMapIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: AbstractMapBasedMultimap$WrappedList$WrappedListIterator
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: AbstractMapBasedMultimap$Itr
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractMapBasedMultimap$NavigableKeySet
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractTable$Values
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ArrayTable$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3671,43 +3677,7 @@ Class: AbstractBiMap$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractBiMap$ValueSet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: AbstractBiMap$EntrySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$KeySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$KeySet$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$AsMap$AsMapEntries
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$SortedKeySet
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultimap$WrappedList$WrappedListIterator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractMapBasedMultiset$2$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LongAddables
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LocalCache
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3715,23 +3685,7 @@ Class: AbstractBiMap$BiMapEntry
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: LocalCache$Segment
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LocalCache$Values
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RemovalListeners
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: RemovalListeners$asynchronous(Lcom$google$common$cache$RemovalListener:Ljava$util$concurrent$Executor:)Lcom$google$common$cache$RemovalListener::12$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LocalCache$Values$removeIf(Ljava$util$function$Predicate:)Z:10$Lambda
+Class: AbstractBiMap$ValueSet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3767,35 +3721,19 @@ at PC = 52
 at line 305
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: CollectCollectors$toImmutableSortedMap(Ljava$util$Comparator:Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::33$Lambda
+Class: RemovalListeners
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectCollectors$toImmutableBiMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::27$Lambda
+Class: RemovalListeners$asynchronous(Lcom$google$common$cache$RemovalListener:Ljava$util$concurrent$Executor:)Lcom$google$common$cache$RemovalListener::12$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectCollectors$toImmutableEnumMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::17$Lambda
+Class: LongAddables
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ForwardingCache
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CollectCollectors$toImmutableEnumMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::27$Lambda
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LocalCache$LocalManualCache
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: LocalCache$LocalManualCache$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractCache$SimpleStatsCounter
+Class: LocalCache
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3803,23 +3741,35 @@ Class: LocalCache$WriteThroughEntry
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractCache
+Class: AbstractMapBasedMultimap$KeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: LocalCache$LoadingValueReference
+Class: AbstractMapBasedMultimap$SortedKeySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectCollectors$toImmutableEnumMap(Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$BinaryOperator:)Ljava$util$stream$Collector::33$Lambda
+Class: AbstractMapBasedMultimap$KeySet$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CacheLoader$SupplierToCacheLoader
+Class: ArrayListMultimap
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CacheLoader$1
+Class: LocalCache$Segment
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalCache$Values
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalCache$Values$removeIf(Ljava$util$function$Predicate:)Z:10$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectCollectors$toImmutableSortedMap(Ljava$util$Comparator:Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::33$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3827,15 +3777,7 @@ Class: LocalCache$EntrySet
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CacheBuilderSpec
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CacheLoader$FunctionToCacheLoader
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CacheBuilder$2
+Class: CollectCollectors$toImmutableBiMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::27$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3843,60 +3785,63 @@ Class: LocalCache$EntrySet$removeIf(Ljava$util$function$Predicate:)Z:10$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Finalizer
-reachable Reflect Calls: 4
-Class reaches Reflection Calls directly
-Direct Features: 
-ManipulateObject which is Dynamic
-ConstructObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-InvokeMethod which is Dynamic
-Methods of Finalizer:
-
-Method: finalizeReference
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 20
-at line 208
-Feature Category: InvokeMethod which is Dynamic
-
-Method: getInheritableThreadLocalsField
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 10
-at line 239
-Feature Category: ManipulateMetaObject which is Dynamic
-
-Method: startFinalizer
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-ManipulateObject which is Dynamic
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 94
-at line 87
-Feature Category: ConstructObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 159
-at line 101
-Feature Category: ManipulateObject which is Dynamic
------------------------------
-Class: Suppliers$ThreadSafeSupplier
+Class: CollectCollectors$toImmutableEnumMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::27$Lambda
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Suppliers$SupplierOfInstance
+Class: LocalCache$LoadingValueReference
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ForwardingLoadingCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectCollectors$toImmutableEnumMap(Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$BinaryOperator:)Ljava$util$stream$Collector::33$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CacheLoader$FunctionToCacheLoader
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CacheLoader$SupplierToCacheLoader
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectCollectors$toImmutableRangeMap(Ljava$util$function$Function:Ljava$util$function$Function:)Ljava$util$stream$Collector::27$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CacheLoader$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalCache$LocalManualCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CacheBuilderSpec
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CacheBuilder$2
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractCache$SimpleStatsCounter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: AbstractCache
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: LocalCache$LocalLoadingCache
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3904,11 +3849,35 @@ Class: AbstractLoadingCache
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Suppliers$ThreadSafeSupplier
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Suppliers$SupplierComposition
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: Suppliers$SupplierOfInstance
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Suppliers$NonSerializableMemoizingSupplier
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Suppliers$MemoizingSupplier
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Suppliers$ExpiringMemoizingSupplier
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: CollectCollectors$flatteningToMultimap(Ljava$util$function$Function:Ljava$util$function$Function:Ljava$util$function$Supplier:)Ljava$util$stream$Collector::18$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Splitter$MapSplitter
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3934,11 +3903,68 @@ Class: Splitter$SplittingIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Splitter$MapSplitter
+Class: Present
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Predicates$NotPredicate
+Class: CollectCollectors$<clinit>()V:75$Lambda
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Finalizer
+reachable Reflect Calls: 4
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+ConstructObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+InvokeMethod which is Dynamic
+Methods of Finalizer:
+
+Method: getInheritableThreadLocalsField
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 10
+at line 239
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Method: finalizeReference
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 20
+at line 208
+Feature Category: InvokeMethod which is Dynamic
+
+Method: startFinalizer
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ManipulateObject which is Dynamic
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 94
+at line 87
+Feature Category: ConstructObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 159
+at line 101
+Feature Category: ManipulateObject which is Dynamic
+-----------------------------
+Class: Predicates$ContainsPatternPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Enums
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3946,31 +3972,7 @@ Class: Predicates$AndPredicate
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Predicates$OrPredicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Present
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicates$ContainsPatternPredicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicates$IsEqualToPredicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicates$InPredicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Predicates$CompositionPredicate
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractIterator
+Class: Absent
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3978,11 +3980,23 @@ Class: Optional$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Suppliers$MemoizingSupplier
+Class: AbstractIterator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Suppliers$NonSerializableMemoizingSupplier
+Class: Predicates$InPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Predicates$IsEqualToPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Predicates$NotPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Predicates$OrPredicate
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3990,7 +4004,7 @@ Class: Functions$FunctionForMapNoDefault
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: PairwiseEquivalence
+Class: Joiner$2
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -3999,10 +4013,6 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Functions$FunctionComposition
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Absent
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -4015,18 +4025,6 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Functions$SupplierFunction
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Joiner$2
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FunctionalEquivalence
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Enums
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -4048,23 +4046,9 @@ at PC = 60
 at line 164
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: FinalizableReferenceQueue$DecoupledLoader
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-LoadClass which is Dynamic
-Methods of FinalizableReferenceQueue$DecoupledLoader:
-
-Method: loadFinalizer
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
-at PC = 12
-at line 299
-Feature Category: LoadClass which is Dynamic
+Class: Predicates$CompositionPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: FinalizableReferenceQueue$SystemLoader
 reachable Reflect Calls: 1
@@ -4102,11 +4086,25 @@ at PC = 2
 at line 341
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: Equivalence$Wrapper
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
+Class: FinalizableReferenceQueue$DecoupledLoader
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of FinalizableReferenceQueue$DecoupledLoader:
+
+Method: loadFinalizer
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
+at PC = 12
+at line 299
+Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: Equivalence$EquivalentToPredicate
+Class: FunctionalEquivalence
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -4114,15 +4112,27 @@ Class: Equivalence$Equals
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Converter$1$1
+Class: Equivalence$Wrapper
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: PairwiseEquivalence
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Equivalence$EquivalentToPredicate
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Converter$ReverseConverter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: Converter$FunctionBasedConverter
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Converter$ConverterComposition
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CharMatcher$Negated
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -4138,6 +4148,10 @@ Class: CharMatcher$ForPredicate
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: CharMatcher$Negated
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: CharMatcher$And
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -4146,10 +4160,6 @@ Class: CharMatcher$Or
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: Converter$FunctionBasedConverter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Converter$ReverseConverter
+Class: Converter$1$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively

@@ -1,29 +1,13 @@
 Project: rxjava-3.1.8.jar
+Classes contained in this project: 31790
 Classes containing reachable Reflections count: 7
 Classes reaching reflection calls only transitively count: 2
+Methods contained in this project: 253585
 Methods containing reachable Reflections count: 7
 -----------------------------
 Class: ReplaySubject
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
------------------------------
-Class: ReplaySubject$SizeBoundReplayBuffer
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-Array which is Dynamic
-Methods of ReplaySubject$SizeBoundReplayBuffer:
-
-Method: getValues
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
-at PC = 40
-at line 954
-Feature Category: Array which is Dynamic
 -----------------------------
 Class: ReplaySubject$SizeAndTimeBoundReplayBuffer
 reachable Reflect Calls: 1
@@ -41,6 +25,24 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
 at PC = 41
 at line 1244
+Feature Category: Array which is Dynamic
+-----------------------------
+Class: ReplaySubject$SizeBoundReplayBuffer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+Array which is Dynamic
+Methods of ReplaySubject$SizeBoundReplayBuffer:
+
+Method: getValues
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 40
+at line 954
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: ReplaySubject$UnboundedReplayBuffer
@@ -79,6 +81,10 @@ at PC = 39
 at line 711
 Feature Category: Array which is Dynamic
 -----------------------------
+Class: ReplayProcessor
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ReplayProcessor$SizeBoundReplayBuffer
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -96,10 +102,6 @@ Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java
 at PC = 52
 at line 948
 Feature Category: Array which is Dynamic
------------------------------
-Class: ReplayProcessor
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: ReplayProcessor$SizeAndTimeBoundReplayBuffer
 reachable Reflect Calls: 1

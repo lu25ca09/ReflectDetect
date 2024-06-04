@@ -1,7 +1,13 @@
 Project: gson-2.10.1.jar
+Classes contained in this project: 30241
 Classes containing reachable Reflections count: 15
-Classes reaching reflection calls only transitively count: 25
+Classes reaching reflection calls only transitively count: 23
+Methods contained in this project: 244372
 Methods containing reachable Reflections count: 22
+-----------------------------
+Class: JsonElement
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: Gson
 reachable Reflect Calls: 1
@@ -29,7 +35,7 @@ Reachable Reflect Methods:
 
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 15
-at line 983
+at line 1272
 Feature Category: Casts which is Dynamic
 
 Method: fromJson
@@ -40,7 +46,7 @@ Reachable Reflect Methods:
 
 Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 15
-at line 1272
+at line 983
 Feature Category: Casts which is Dynamic
 -----------------------------
 Class: TypeToken
@@ -48,10 +54,6 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: TypeAdapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JsonElement
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -76,14 +78,6 @@ Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String)
 at PC = 2
 at line 37
 Feature Category: LoadClass which is Dynamic
------------------------------
-Class: ReflectionAccessFilterHelper
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ConstructorConstructor
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: UnsafeAllocator$1
 reachable Reflect Calls: 1
@@ -186,17 +180,6 @@ Direct Features:
 Array which is Dynamic
 Methods of ArrayTypeAdapter:
 
-Method: write
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
-at PC = 31
-at line 103
-Feature Category: Array which is Dynamic
-
 Method: read
 Reachable Reflect Methods Count: 3
 Reflect Features: 
@@ -217,8 +200,19 @@ Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java
 at PC = 118
 at line 89
 Feature Category: Array which is Dynamic
+
+Method: write
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object get(java.lang.Object,int) }
+at PC = 31
+at line 103
+Feature Category: Array which is Dynamic
 -----------------------------
-Class: CollectionTypeAdapterFactory$Adapter
+Class: Streams
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -240,7 +234,11 @@ at PC = 78
 at line 886
 Feature Category: AccessObject which is Dynamic
 -----------------------------
-Class: Streams
+Class: CollectionTypeAdapterFactory$Adapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ArrayTypeAdapter$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -262,19 +260,7 @@ at PC = 65
 at line 150
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: ArrayTypeAdapter$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: MapTypeAdapterFactory$Adapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ReflectiveTypeAdapterFactory$Adapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ReflectiveTypeAdapterFactory$FieldReflectionAdapter
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -287,6 +273,14 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: ReflectiveTypeAdapterFactory
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ReflectiveTypeAdapterFactory$Adapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ReflectiveTypeAdapterFactory$FieldReflectionAdapter
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -307,7 +301,7 @@ Reflect Features:
 ManipulateMetaObject which is Dynamic
 Reachable Reflect Methods: 
 
-Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
 at PC = 2
 at line 35
 Feature Category: ManipulateMetaObject which is Dynamic
@@ -354,6 +348,17 @@ AccessObject which is Dynamic
 InvokeMethod which is Dynamic
 Methods of ReflectiveTypeAdapterFactory$1:
 
+Method: readIntoField
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 89
+at line 222
+Feature Category: ManipulateObject which is Dynamic
+
 Method: write
 Reachable Reflect Methods Count: 2
 Reflect Features: 
@@ -370,17 +375,6 @@ Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
 at PC = 119
 at line 187
 Feature Category: AccessObject which is Dynamic
-
-Method: readIntoField
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 89
-at line 222
-Feature Category: ManipulateObject which is Dynamic
 -----------------------------
 Class: ObjectTypeAdapter
 reachable Reflect Calls: 0
@@ -404,24 +398,6 @@ at PC = 8
 at line 262
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: UnsafeAllocator$2
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-InvokeMethod which is Dynamic
-Methods of UnsafeAllocator$2:
-
-Method: newInstance
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 27
-at line 87
-Feature Category: InvokeMethod which is Dynamic
------------------------------
 Class: ReflectionAccessFilterHelper$AccessChecker$1
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -440,12 +416,50 @@ at PC = 13
 at line 78
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: Excluder$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: UnsafeAllocator$2
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of UnsafeAllocator$2:
+
+Method: newInstance
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 27
+at line 87
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
 Class: ReflectionHelper$RecordSupportedHelper
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
 Direct Features: 
 InvokeMethod which is Dynamic
 Methods of ReflectionHelper$RecordSupportedHelper:
+
+Method: getRecordComponentNames
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 9
+at line 210
+Feature Category: InvokeMethod which is Dynamic
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 47
+at line 213
+Feature Category: InvokeMethod which is Dynamic
 
 Method: isRecord
 Reachable Reflect Methods Count: 1
@@ -473,26 +487,6 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 47
 at line 227
 Feature Category: InvokeMethod which is Dynamic
-
-Method: getRecordComponentNames
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 9
-at line 210
-Feature Category: InvokeMethod which is Dynamic
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 47
-at line 213
-Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: Excluder$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: ConstructorConstructor$19
 reachable Reflect Calls: 0

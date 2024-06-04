@@ -1,6 +1,8 @@
 Project: jackson-databind-2.17.0.jar
+Classes contained in this project: 30812
 Classes containing reachable Reflections count: 24
-Classes reaching reflection calls only transitively count: 122
+Classes reaching reflection calls only transitively count: 87
+Methods contained in this project: 252397
 Methods containing reachable Reflections count: 49
 -----------------------------
 Class: ObjectMapper
@@ -48,11 +50,11 @@ at PC = 3
 at line 392
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: RawValue
+Class: AnnotatedMember
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: SerializerProvider
+Class: RawValue
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -74,15 +76,7 @@ at PC = 11
 at line 153
 Feature Category: Array which is Dynamic
 -----------------------------
-Class: JSONWrappedObject
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JSONPObject
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: DeserializationContext
+Class: SerializerProvider
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -111,33 +105,22 @@ Reflect Features:
 ManipulateMetaObject which is Dynamic
 Reachable Reflect Methods: 
 
-Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
 at PC = 59
 at line 1005
 Feature Category: ManipulateMetaObject which is Dynamic
 -----------------------------
-Class: ArrayBuilders
-reachable Reflect Calls: 2
-Class reaches Reflection Calls directly
-Direct Features: 
-Array which is Dynamic
-Methods of ArrayBuilders:
-
-Method: insertInListNoDup
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
-at PC = 31
-at line 219
-Feature Category: Array which is Dynamic
-
-Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
-at PC = 98
-at line 232
-Feature Category: Array which is Dynamic
+Class: JSONWrappedObject
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JSONPObject
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: EnumResolver
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: AnnotatedMethod
 reachable Reflect Calls: 3
@@ -146,15 +129,15 @@ Direct Features:
 InvokeMethod which is Dynamic
 Methods of AnnotatedMethod:
 
-Method: callOnWith
+Method: callOn
 Reachable Reflect Methods Count: 1
 Reflect Features: 
 InvokeMethod which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 6
-at line 118
+at PC = 9
+at line 114
 Feature Category: InvokeMethod which is Dynamic
 
 Method: call1
@@ -168,15 +151,26 @@ at PC = 13
 at line 110
 Feature Category: InvokeMethod which is Dynamic
 
-Method: setValue
+Method: call
 Reachable Reflect Methods Count: 1
 Reflect Features: 
 InvokeMethod which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 13
-at line 168
+at PC = 9
+at line 100
+Feature Category: InvokeMethod which is Dynamic
+
+Method: callOnWith
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 6
+at line 118
 Feature Category: InvokeMethod which is Dynamic
 
 Method: call
@@ -190,17 +184,6 @@ at PC = 6
 at line 105
 Feature Category: InvokeMethod which is Dynamic
 
-Method: callOn
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 9
-at line 114
-Feature Category: InvokeMethod which is Dynamic
-
 Method: getValue
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -212,16 +195,46 @@ at PC = 9
 at line 179
 Feature Category: InvokeMethod which is Dynamic
 
-Method: call
+Method: setValue
 Reachable Reflect Methods Count: 1
 Reflect Features: 
 InvokeMethod which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 9
-at line 100
+at PC = 13
+at line 168
 Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: AnnotatedField
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+AccessObject which is Dynamic
+Methods of AnnotatedField:
+
+Method: getValue
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 5
+at line 111
+Feature Category: AccessObject which is Dynamic
+
+Method: setValue
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 6
+at line 100
+Feature Category: ManipulateObject which is Dynamic
 -----------------------------
 Class: ClassUtil$EnumTypeLocator
 reachable Reflect Calls: 2
@@ -253,35 +266,28 @@ at PC = 2
 at line 1459
 Feature Category: AccessObject which is Dynamic
 -----------------------------
-Class: AnnotatedField
+Class: ArrayBuilders
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
 Direct Features: 
-ManipulateObject which is Dynamic
-AccessObject which is Dynamic
-Methods of AnnotatedField:
+Array which is Dynamic
+Methods of ArrayBuilders:
 
-Method: setValue
-Reachable Reflect Methods Count: 1
+Method: insertInListNoDup
+Reachable Reflect Methods Count: 2
 Reflect Features: 
-ManipulateObject which is Dynamic
+Array which is Dynamic
 Reachable Reflect Methods: 
 
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 6
-at line 100
-Feature Category: ManipulateObject which is Dynamic
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 31
+at line 219
+Feature Category: Array which is Dynamic
 
-Method: getValue
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 5
-at line 111
-Feature Category: AccessObject which is Dynamic
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 98
+at line 232
+Feature Category: Array which is Dynamic
 -----------------------------
 Class: ArrayBuilders$1
 reachable Reflect Calls: 2
@@ -313,17 +319,6 @@ Direct Features:
 Array which is Dynamic
 Methods of ArrayType:
 
-Method: construct
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Array which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
-at PC = 5
-at line 47
-Feature Category: Array which is Dynamic
-
 Method: withContentType
 Reachable Reflect Methods Count: 1
 Reflect Features: 
@@ -333,6 +328,17 @@ Reachable Reflect Methods:
 Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
 at PC = 5
 at line 53
+Feature Category: Array which is Dynamic
+
+Method: construct
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Array which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Array{ public static java.lang.Object newInstance(java.lang.Class,int) }
+at PC = 5
+at line 47
 Feature Category: Array which is Dynamic
 -----------------------------
 Class: ObjectNode
@@ -347,6 +353,10 @@ Class: StdDelegatingSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: CollectionSerializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: SerializableSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -355,15 +365,7 @@ Class: ReferenceTypeSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: CollectionSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ObjectArraySerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MapProperty
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -371,11 +373,15 @@ Class: MapSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: JsonValueSerializer
+Class: MapProperty
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: IterableSerializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JsonValueSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -412,23 +418,6 @@ at PC = 27
 at line 688
 Feature Category: InvokeMethod which is Dynamic
 
-Method: get
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-AccessObject which is Dynamic
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 12
-at line 919
-Feature Category: AccessObject which is Dynamic
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 27
-at line 920
-Feature Category: InvokeMethod which is Dynamic
-
 Method: serializeAsElement
 Reachable Reflect Methods Count: 2
 Reflect Features: 
@@ -445,6 +434,23 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 27
 at line 765
 Feature Category: InvokeMethod which is Dynamic
+
+Method: get
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+AccessObject which is Dynamic
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 12
+at line 919
+Feature Category: AccessObject which is Dynamic
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 27
+at line 920
+Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: AnyGetterWriter
 reachable Reflect Calls: 0
@@ -454,19 +460,7 @@ Class: BeanSerializerBase
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: UnwrappingBeanSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StringCollectionSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StringArraySerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: UnwrappingBeanPropertyWriter
+Class: BeanSerializerBuilder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -474,7 +468,19 @@ Class: WritableObjectId
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: UnwrappingBeanPropertyWriter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeWrappedSerializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: SimpleBeanPropertyFilter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StringArraySerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -482,11 +488,7 @@ Class: MapEntrySerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: IndexedListSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: IndexedStringListSerializer
+Class: FilteredBeanPropertyWriter$MultiView
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -494,15 +496,7 @@ Class: FilteredBeanPropertyWriter$SingleView
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FilteredBeanPropertyWriter$MultiView
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: IteratorSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: VirtualBeanPropertyWriter
+Class: IndexedListSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -510,7 +504,7 @@ Class: PropertyBuilder
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: BeanSerializer
+Class: IteratorSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -518,11 +512,11 @@ Class: DefaultSerializerProvider
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: BasicSerializerFactory
+Class: BeanSerializerFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ValueNode
+Class: BasicSerializerFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -530,7 +524,27 @@ Class: SerializerFactoryConfig
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: BeanAsArraySerializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: VirtualBeanPropertyWriter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ValueNode
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: POJONode
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ObjectWriter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: InternalNodeMapper$WrapperForSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -552,27 +566,7 @@ at PC = 2
 at line 237
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: ObjectReader
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NullNode
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: InternalNodeMapper$WrapperForSerializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: SimpleModule
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: JsonDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: TypeDeserializerBase
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -580,25 +574,62 @@ Class: BasicBeanDescription
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AsDeductionTypeDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AsArrayTypeDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AsPropertyTypeDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AsWrapperTypeDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MapperBuilder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
+Class: JDK14Util$RecordAccessor
+reachable Reflect Calls: 5
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+LoadClass which is Dynamic
+Methods of JDK14Util$RecordAccessor:
+
+Method: recordComponents
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 9
+at line 136
+Feature Category: InvokeMethod which is Dynamic
+
+Method: <init>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 21
+at line 66
+Feature Category: LoadClass which is Dynamic
+
+Method: getRecordFieldNames
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 43
+at line 93
+Feature Category: InvokeMethod which is Dynamic
+
+Method: getRecordFields
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 40
+at line 114
+Feature Category: InvokeMethod which is Dynamic
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 107
+at line 122
+Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: AnnotatedConstructor
 reachable Reflect Calls: 3
@@ -606,17 +637,6 @@ Class reaches Reflection Calls directly
 Direct Features: 
 ConstructObject which is Dynamic
 Methods of AnnotatedConstructor:
-
-Method: call
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 5
-at line 126
-Feature Category: ConstructObject which is Dynamic
 
 Method: call1
 Reachable Reflect Methods Count: 1
@@ -636,66 +656,24 @@ ConstructObject which is Dynamic
 Reachable Reflect Methods: 
 
 Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 5
+at line 126
+Feature Category: ConstructObject which is Dynamic
+
+Method: call
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
 at PC = 8
 at line 121
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: JDK14Util$RecordAccessor
-reachable Reflect Calls: 5
-Class reaches Reflection Calls directly
-Direct Features: 
-InvokeMethod which is Dynamic
-LoadClass which is Dynamic
-Methods of JDK14Util$RecordAccessor:
-
-Method: <init>
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 21
-at line 66
-Feature Category: LoadClass which is Dynamic
-
-Method: getRecordFields
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 40
-at line 114
-Feature Category: InvokeMethod which is Dynamic
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 107
-at line 122
-Feature Category: InvokeMethod which is Dynamic
-
-Method: getRecordFieldNames
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 43
-at line 93
-Feature Category: InvokeMethod which is Dynamic
-
-Method: recordComponents
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 9
-at line 136
-Feature Category: InvokeMethod which is Dynamic
+Class: MapperBuilder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: Java7Support
 reachable Reflect Calls: 1
@@ -715,39 +693,41 @@ at PC = 4
 at line 23
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: StdScalarDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: FromStringDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: CoreXMLSerializers$XMLGregorianCalendarSerializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StdDeserializer
+Class: StdKeyDeserializers
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StringCollectionDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NullValueProvider
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ContainerDeserializerBase
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: UntypedObjectDeserializer
+Class: StdKeyDeserializer$EnumKD
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: StdKeyDeserializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: StdKeyDeserializer$StringCtorKeyDeserializer
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of StdKeyDeserializer$StringCtorKeyDeserializer:
+
+Method: _parse
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 12
+at line 529
+Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: StdValueInstantiator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -769,48 +749,6 @@ at PC = 13
 at line 551
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: StdKeyDeserializer$StringCtorKeyDeserializer
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-ConstructObject which is Dynamic
-Methods of StdKeyDeserializer$StringCtorKeyDeserializer:
-
-Method: _parse
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 12
-at line 529
-Feature Category: ConstructObject which is Dynamic
------------------------------
-Class: StdKeyDeserializer$DelegatingKD
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: ReferenceTypeDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$IntDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: SettableBeanProperty
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StringDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StdValueInstantiator
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: StringArrayDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -823,19 +761,11 @@ Class: BeanDeserializerBase
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: StdNodeBasedDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ThrowableDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: PrimitiveArrayDeserializers$DoubleDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$FloatDeser
+Class: PropertyBasedCreator
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -844,66 +774,6 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: SettableAnyProperty
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$CharDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$LongDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$ShortDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StackTraceElementDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$ByteDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$ShortDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PrimitiveArrayDeserializers$BooleanDeser
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: StdDelegatingDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$FloatDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$NumberDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$DoubleDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$CharacterDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$ByteDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$BigDecimalDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NumberDeserializers$BigIntegerDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -933,6 +803,10 @@ Class: MapDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: ReadableObjectId
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: CreatorProperty
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -941,7 +815,7 @@ Class: FactoryBasedEnumDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: DelegatingDeserializer
+Class: EnumDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -963,11 +837,7 @@ at PC = 34
 at line 261
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: EnumDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: EnumSetDeserializer
+Class: PropertyValueBuffer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -975,23 +845,11 @@ Class: EnumMapDeserializer
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ObjectIdReader
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: PropertyValueBuffer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: CollectionDeserializer
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: UnwrappedPropertyHandler
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TypeWrappedDeserializer
+Class: PropertyValue$Any
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1013,15 +871,7 @@ at PC = 52
 at line 121
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: ObjectIdValueProperty
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: ObjectIdReferenceProperty
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: NullsAsEmptyProvider
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1031,28 +881,6 @@ Class reaches Reflection Calls directly
 Direct Features: 
 InvokeMethod which is Dynamic
 Methods of MethodProperty:
-
-Method: setAndReturn
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 13
-at line 193
-Feature Category: InvokeMethod which is Dynamic
-
-Method: deserializeSetAndReturn
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 110
-at line 170
-Feature Category: InvokeMethod which is Dynamic
 
 Method: deserializeAndSet
 Reachable Reflect Methods Count: 1
@@ -1075,6 +903,28 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 13
 at line 182
 Feature Category: InvokeMethod which is Dynamic
+
+Method: deserializeSetAndReturn
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 110
+at line 170
+Feature Category: InvokeMethod which is Dynamic
+
+Method: setAndReturn
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 13
+at line 193
+Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: SettableBeanProperty$Delegating
 reachable Reflect Calls: 0
@@ -1084,60 +934,13 @@ Class: ManagedReferenceProperty
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: MergingSettableBeanProperty
+Class: ObjectIdValueProperty
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: FieldProperty
-reachable Reflect Calls: 3
-Class reaches Reflection Calls directly
-Direct Features: 
-ManipulateObject which is Dynamic
-Methods of FieldProperty:
-
-Method: set
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 6
-at line 190
-Feature Category: ManipulateObject which is Dynamic
-
-Method: setAndReturn
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 6
-at line 201
-Feature Category: ManipulateObject which is Dynamic
-
-Method: deserializeAndSet
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 101
-at line 150
-Feature Category: ManipulateObject which is Dynamic
-
-Method: deserializeSetAndReturn
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ManipulateObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 103
-at line 179
-Feature Category: ManipulateObject which is Dynamic
+Class: MergingSettableBeanProperty
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: InnerClassProperty
 reachable Reflect Calls: 1
@@ -1161,15 +964,58 @@ Class: ExternalTypeHandler
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ValueInstantiator$Delegating
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
+Class: FieldProperty
+reachable Reflect Calls: 3
+Class reaches Reflection Calls directly
+Direct Features: 
+ManipulateObject which is Dynamic
+Methods of FieldProperty:
+
+Method: deserializeAndSet
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 101
+at line 150
+Feature Category: ManipulateObject which is Dynamic
+
+Method: deserializeSetAndReturn
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 103
+at line 179
+Feature Category: ManipulateObject which is Dynamic
+
+Method: setAndReturn
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 6
+at line 201
+Feature Category: ManipulateObject which is Dynamic
+
+Method: set
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ManipulateObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 6
+at line 190
+Feature Category: ManipulateObject which is Dynamic
 -----------------------------
-Class: SettableAnyProperty$MapFieldAnyProperty
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: BeanAsArrayDeserializer
+Class: CreatorCollector
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1191,7 +1037,23 @@ at PC = 12
 at line 125
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: BeanAsArrayDeserializer
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: ValueInstantiator$Delegating
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SettableAnyProperty$MapFieldAnyProperty
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: SettableAnyProperty$JsonNodeFieldAnyProperty
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: SettableAnyProperty$AnySetterReferring
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -1213,6 +1075,10 @@ at PC = 22
 at line 201
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: BeanDeserializerBuilder
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: BasicDeserializerFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -1221,15 +1087,11 @@ Class: DeserializerFactoryConfig
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: AbstractDeserializer
+Class: BeanDeserializerFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: DefaultDeserializationContext
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: MappingIterator
+Class: ObjectWriter$Prefetch
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------

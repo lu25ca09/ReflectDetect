@@ -45,8 +45,6 @@ class Analysis(var rootService: RootService) {
                 pc = caller._2,
                 lineNumber = linenumber,
                 directFeature = directDynamicFeature,
-                parameterIntra = mutable.Set[DUVar[ValueInformation]](),
-                parameterConstOrInter = mutable.Set[DUVar[ValueInformation]](),
                 caller = callerMethodInfo)
               addDynamicLanguageFeature(callerClassInfo, callerMethodInfo, reachedReflectMethod)
               addReachableReflectMethod(callerClassInfo, callerMethodInfo, caller._2, reachedReflectMethod)

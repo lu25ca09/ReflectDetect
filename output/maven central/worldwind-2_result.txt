@@ -1,6 +1,8 @@
 Project: worldwind-2.0.0.jar
+Classes contained in this project: 31827
 Classes containing reachable Reflections count: 7
-Classes reaching reflection calls only transitively count: 6
+Classes reaching reflection calls only transitively count: 2
+Methods contained in this project: 262625
 Methods containing reachable Reflections count: 8
 -----------------------------
 Class: WWUtil
@@ -41,10 +43,6 @@ at PC = 349
 at line -1
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: WWXML
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: WorldWind
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
@@ -69,6 +67,10 @@ Call of java.lang.Class{ public java.lang.Object newInstance() }
 at PC = 41
 at line -1
 Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: BasicXMLEventParserContext
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractXMLEventParser
 reachable Reflect Calls: 2
@@ -110,6 +112,10 @@ Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.
 at PC = 28
 at line -1
 Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: KMLParserContext
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: GDALUtils
 reachable Reflect Calls: 5
@@ -160,10 +166,6 @@ at PC = 73
 at line -1
 Feature Category: ManipulateObject which is Dynamic
 -----------------------------
-Class: SurfaceQuad
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: BrowserOpener
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
@@ -206,19 +208,3 @@ Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.
 at PC = 103
 at line -1
 Feature Category: ConstructObject which is Dynamic
------------------------------
-Class: AbstractSurfaceShape
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: AbstractBrowserBalloon
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: BasicLayerFactory
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: BasicModel
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
