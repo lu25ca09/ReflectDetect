@@ -1,13 +1,10 @@
 Project: gson-2.10.1.jar
 Classes contained in this project: 30241
 Classes containing reachable Reflections count: 15
-Classes reaching reflection calls only transitively count: 23
+Classes reaching reflection calls only transitively count: 25
 Methods contained in this project: 244372
+Reachable methods contained in this project: 1694
 Methods containing reachable Reflections count: 22
------------------------------
-Class: JsonElement
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: Gson
 reachable Reflect Calls: 1
@@ -15,17 +12,6 @@ Class reaches Reflection Calls directly
 Direct Features: 
 Casts which is Dynamic
 Methods of Gson:
-
-Method: fromJson
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-Casts which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
-at PC = 15
-at line 1076
-Feature Category: Casts which is Dynamic
 
 Method: fromJson
 Reachable Reflect Methods Count: 1
@@ -48,6 +34,17 @@ Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
 at PC = 15
 at line 983
 Feature Category: Casts which is Dynamic
+
+Method: fromJson
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+Casts which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public java.lang.Object cast(java.lang.Object) }
+at PC = 15
+at line 1076
+Feature Category: Casts which is Dynamic
 -----------------------------
 Class: TypeToken
 reachable Reflect Calls: 0
@@ -58,6 +55,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: SqlTimestampTypeAdapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JsonParser
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -79,6 +80,10 @@ at PC = 2
 at line 37
 Feature Category: LoadClass which is Dynamic
 -----------------------------
+Class: ReflectionAccessFilterHelper
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: UnsafeAllocator$1
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -96,6 +101,10 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 20
 at line 63
 Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: ConstructorConstructor
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
 -----------------------------
 Class: UnsafeAllocator
 reachable Reflect Calls: 7
@@ -216,6 +225,10 @@ Class: Streams
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
+Class: CollectionTypeAdapterFactory$Adapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: TypeAdapters$EnumTypeAdapter
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -233,10 +246,6 @@ Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
 at PC = 78
 at line 886
 Feature Category: AccessObject which is Dynamic
------------------------------
-Class: CollectionTypeAdapterFactory$Adapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: ArrayTypeAdapter$1
 reachable Reflect Calls: 0
@@ -268,11 +277,11 @@ Class: JsonAdapterAnnotationTypeAdapterFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: TypeAdapters$29
+Class: ReflectiveTypeAdapterFactory
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
-Class: ReflectiveTypeAdapterFactory
+Class: TypeAdapters$29
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -285,6 +294,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: TreeTypeAdapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: TypeAdapters$34$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
@@ -316,28 +329,6 @@ Call of java.lang.reflect.Constructor{ public void setAccessible(boolean) }
 at PC = 2
 at line 123
 Feature Category: ManipulateMetaObject which is Dynamic
------------------------------
-Class: ReflectiveTypeAdapterFactory$RecordAdapter
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-ConstructObject which is Dynamic
-Methods of ReflectiveTypeAdapterFactory$RecordAdapter:
-
-Method: finalize
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-ConstructObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 5
-at line 515
-Feature Category: ConstructObject which is Dynamic
------------------------------
-Class: TypeAdapters$34$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: ReflectiveTypeAdapterFactory$1
 reachable Reflect Calls: 3
@@ -376,9 +367,23 @@ at PC = 119
 at line 187
 Feature Category: AccessObject which is Dynamic
 -----------------------------
-Class: ObjectTypeAdapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
+Class: ReflectiveTypeAdapterFactory$RecordAdapter
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+ConstructObject which is Dynamic
+Methods of ReflectiveTypeAdapterFactory$RecordAdapter:
+
+Method: finalize
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+ConstructObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 5
+at line 515
+Feature Category: ConstructObject which is Dynamic
 -----------------------------
 Class: ConstructorConstructor$9
 reachable Reflect Calls: 1
@@ -398,28 +403,6 @@ at PC = 8
 at line 262
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: ReflectionAccessFilterHelper$AccessChecker$1
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-InvokeMethod which is Dynamic
-Methods of ReflectionAccessFilterHelper$AccessChecker$1:
-
-Method: canAccess
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 13
-at line 78
-Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: Excluder$1
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: UnsafeAllocator$2
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -438,12 +421,41 @@ at PC = 27
 at line 87
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: ReflectionAccessFilterHelper$AccessChecker$1
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+InvokeMethod which is Dynamic
+Methods of ReflectionAccessFilterHelper$AccessChecker$1:
+
+Method: canAccess
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 13
+at line 78
+Feature Category: InvokeMethod which is Dynamic
+-----------------------------
 Class: ReflectionHelper$RecordSupportedHelper
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
 Direct Features: 
 InvokeMethod which is Dynamic
 Methods of ReflectionHelper$RecordSupportedHelper:
+
+Method: isRecord
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 9
+at line 201
+Feature Category: InvokeMethod which is Dynamic
 
 Method: getRecordComponentNames
 Reachable Reflect Methods Count: 2
@@ -459,17 +471,6 @@ Feature Category: InvokeMethod which is Dynamic
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 47
 at line 213
-Feature Category: InvokeMethod which is Dynamic
-
-Method: isRecord
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 9
-at line 201
 Feature Category: InvokeMethod which is Dynamic
 
 Method: getCanonicalRecordConstructor
@@ -488,6 +489,10 @@ at PC = 47
 at line 227
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: Excluder$1
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: ConstructorConstructor$19
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -501,6 +506,10 @@ reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------
 Class: Gson$FutureTypeAdapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
+Class: JsonStreamParser
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
 -----------------------------

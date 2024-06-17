@@ -3,6 +3,7 @@ Classes contained in this project: 30079
 Classes containing reachable Reflections count: 2
 Classes reaching reflection calls only transitively count: 0
 Methods contained in this project: 243883
+Reachable methods contained in this project: 683
 Methods containing reachable Reflections count: 2
 -----------------------------
 Class: SubstituteLogger

@@ -3,6 +3,7 @@ Classes contained in this project: 30197
 Classes containing reachable Reflections count: 7
 Classes reaching reflection calls only transitively count: 0
 Methods contained in this project: 243598
+Reachable methods contained in this project: 631
 Methods containing reachable Reflections count: 23
 -----------------------------
 Class: AnnotationProcessorHider$AnnotationProcessor
@@ -14,6 +15,23 @@ ConstructObject which is Dynamic
 ManipulateMetaObject which is Dynamic
 LoadClass which is Dynamic
 Methods of AnnotationProcessorHider$AnnotationProcessor:
+
+Method: createWrappedInstance
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ConstructObject which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
+at PC = 7
+at line 100
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
+at PC = 23
+at line 101
+Feature Category: ConstructObject which is Dynamic
 
 Method: disableJava9SillyWarning
 Reachable Reflect Methods Count: 3
@@ -37,23 +55,6 @@ Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String)
 at PC = 24
 at line 81
 Feature Category: LoadClass which is Dynamic
-
-Method: createWrappedInstance
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-ConstructObject which is Dynamic
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.ClassLoader{ public java.lang.Class loadClass(java.lang.String) }
-at PC = 7
-at line 100
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.lang.Object[]) }
-at PC = 23
-at line 101
-Feature Category: ConstructObject which is Dynamic
 -----------------------------
 Class: ShadowClassLoader
 reachable Reflect Calls: 1
@@ -113,35 +114,6 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 3
 at line 133
 Feature Category: InvokeMethod which is Dynamic
------------------------------
-Class: Processor
-reachable Reflect Calls: 2
-Class reaches Reflection Calls directly
-Direct Features: 
-AccessObject which is Dynamic
-Methods of Processor:
-
-Method: listOptions
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 27
-at line 107
-Feature Category: AccessObject which is Dynamic
-
-Method: findServices
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-AccessObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
-at PC = 10
-at line 130
-Feature Category: AccessObject which is Dynamic
 -----------------------------
 Class: PatchFixesHider$PatchFixes
 reachable Reflect Calls: 14
@@ -305,6 +277,35 @@ at PC = 44
 at line 728
 Feature Category: ManipulateObject which is Dynamic
 -----------------------------
+Class: Processor
+reachable Reflect Calls: 2
+Class reaches Reflection Calls directly
+Direct Features: 
+AccessObject which is Dynamic
+Methods of Processor:
+
+Method: findServices
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 10
+at line 130
+Feature Category: AccessObject which is Dynamic
+
+Method: listOptions
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+AccessObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public java.lang.Object get(java.lang.Object) }
+at PC = 27
+at line 107
+Feature Category: AccessObject which is Dynamic
+-----------------------------
 Class: Tasks$Delombok
 reachable Reflect Calls: 11
 Class reaches Reflection Calls directly
@@ -316,6 +317,39 @@ ManipulateMetaObject which is Dynamic
 InvokeMethod which is Dynamic
 LoadClass which is Dynamic
 Methods of Tasks$Delombok:
+
+Method: shadowLoadClass
+Reachable Reflect Methods Count: 5
+Reflect Features: 
+ManipulateMetaObject which is Dynamic
+InvokeMethod which is Dynamic
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 8
+at line 167
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
+at PC = 26
+at line 172
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
+at PC = 43
+at line 174
+Feature Category: ManipulateMetaObject which is Dynamic
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 52
+at line 175
+Feature Category: InvokeMethod which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 66
+at line 179
+Feature Category: LoadClass which is Dynamic
 
 Method: execute
 Reachable Reflect Methods Count: 6
@@ -356,39 +390,6 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 241
 at line 211
 Feature Category: InvokeMethod which is Dynamic
-
-Method: shadowLoadClass
-Reachable Reflect Methods Count: 5
-Reflect Features: 
-ManipulateMetaObject which is Dynamic
-InvokeMethod which is Dynamic
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 8
-at line 167
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String) }
-at PC = 26
-at line 172
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
-at PC = 43
-at line 174
-Feature Category: ManipulateMetaObject which is Dynamic
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 52
-at line 175
-Feature Category: InvokeMethod which is Dynamic
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 66
-at line 179
-Feature Category: LoadClass which is Dynamic
 -----------------------------
 Class: MavenEcjBootstrapAgent$1
 reachable Reflect Calls: 2

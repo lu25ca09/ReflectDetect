@@ -22,7 +22,7 @@ class ProjectInfo(val projectPath : String,
   def incrementDirectCounter(): Unit ={directReflectClassesCounter=directReflectClassesCounter+1}
   def incrementTransitiveCounter(): Unit ={transitiveReflectClassesCounter=transitiveReflectClassesCounter+1}
   def decrementTransitiveCounter(): Unit ={transitiveReflectClassesCounter=transitiveReflectClassesCounter-1}
-  def getMethodCounter: Int = reachableReflectMethodCounter
+  def getReflectMethodCounter: Int = reachableReflectMethodCounter
   def getdirectCounter: Int = directReflectClassesCounter
   def getTransitiveCounter: Int = transitiveReflectClassesCounter
 }

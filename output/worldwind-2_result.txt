@@ -3,6 +3,7 @@ Classes contained in this project: 31827
 Classes containing reachable Reflections count: 7
 Classes reaching reflection calls only transitively count: 2
 Methods contained in this project: 262625
+Reachable methods contained in this project: 19950
 Methods containing reachable Reflections count: 8
 -----------------------------
 Class: WWUtil
@@ -43,6 +44,10 @@ at PC = 349
 at line -1
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: WWXML
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: WorldWind
 reachable Reflect Calls: 2
 Class reaches Reflection Calls directly
@@ -67,10 +72,6 @@ Call of java.lang.Class{ public java.lang.Object newInstance() }
 at PC = 41
 at line -1
 Feature Category: ConstructObject which is Dynamic
------------------------------
-Class: BasicXMLEventParserContext
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
 -----------------------------
 Class: AbstractXMLEventParser
 reachable Reflect Calls: 2
@@ -113,10 +114,6 @@ at PC = 28
 at line -1
 Feature Category: ConstructObject which is Dynamic
 -----------------------------
-Class: KMLParserContext
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: GDALUtils
 reachable Reflect Calls: 5
 Class reaches Reflection Calls directly
@@ -125,23 +122,6 @@ ManipulateObject which is Dynamic
 AccessObject which is Dynamic
 ManipulateMetaObject which is Dynamic
 Methods of GDALUtils:
-
-Method: restoreJavaLibraryPath
-Reachable Reflect Methods Count: 2
-Reflect Features: 
-ManipulateObject which is Dynamic
-ManipulateMetaObject which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
-at PC = 23
-at line -1
-Feature Category: ManipulateObject which is Dynamic
-
-Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
-at PC = 32
-at line -1
-Feature Category: ManipulateMetaObject which is Dynamic
 
 Method: alterJavaLibraryPath
 Reachable Reflect Methods Count: 3
@@ -165,6 +145,23 @@ Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Obje
 at PC = 73
 at line -1
 Feature Category: ManipulateObject which is Dynamic
+
+Method: restoreJavaLibraryPath
+Reachable Reflect Methods Count: 2
+Reflect Features: 
+ManipulateObject which is Dynamic
+ManipulateMetaObject which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Field{ public void set(java.lang.Object,java.lang.Object) }
+at PC = 23
+at line -1
+Feature Category: ManipulateObject which is Dynamic
+
+Call of java.lang.reflect.Field{ public void setAccessible(boolean) }
+at PC = 32
+at line -1
+Feature Category: ManipulateMetaObject which is Dynamic
 -----------------------------
 Class: BrowserOpener
 reachable Reflect Calls: 2
@@ -208,3 +205,7 @@ Call of java.lang.reflect.Constructor{ public java.lang.Object newInstance(java.
 at PC = 103
 at line -1
 Feature Category: ConstructObject which is Dynamic
+-----------------------------
+Class: BasicLayerFactory
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively

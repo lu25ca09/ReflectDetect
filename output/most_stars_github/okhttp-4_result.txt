@@ -1,8 +1,9 @@
 Project: okhttp-4.12.0.jar
 Classes contained in this project: 30343
 Classes containing reachable Reflections count: 16
-Classes reaching reflection calls only transitively count: 9
+Classes reaching reflection calls only transitively count: 7
 Methods contained in this project: 245965
+Reachable methods contained in this project: 3380
 Methods containing reachable Reflections count: 20
 -----------------------------
 Class: Request
@@ -73,10 +74,6 @@ at PC = 73
 at line 572
 Feature Category: Casts which is Dynamic
 -----------------------------
-Class: OkHttpClient$Builder
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: CertificatePinner$check$1
 reachable Reflect Calls: 0
 Class only reaches reflection calls transitively
@@ -143,10 +140,6 @@ at PC = 28
 at line 136
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
-Class: AndroidPlatform$Companion
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
 Class: AndroidPlatform
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -164,43 +157,6 @@ Call of java.lang.reflect.Method{ public void setAccessible(boolean) }
 at PC = 32
 at line 117
 Feature Category: ManipulateMetaObject which is Dynamic
------------------------------
-Class: DeferredSocketAdapter
-reachable Reflect Calls: 0
-Class only reaches reflection calls transitively
------------------------------
-Class: Jdk8WithJettyBootPlatform$Companion
-reachable Reflect Calls: 4
-Class reaches Reflection Calls directly
-Direct Features: 
-LoadClass which is Dynamic
-Methods of Jdk8WithJettyBootPlatform$Companion:
-
-Method: buildIfSupported
-Reachable Reflect Methods Count: 4
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 36
-at line 137
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 61
-at line 138
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 87
-at line 139
-Feature Category: LoadClass which is Dynamic
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 113
-at line 140
-Feature Category: LoadClass which is Dynamic
 -----------------------------
 Class: AndroidSocketAdapter
 reachable Reflect Calls: 4
@@ -241,6 +197,43 @@ at PC = 96
 at line 61
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
+Class: Jdk8WithJettyBootPlatform$Companion
+reachable Reflect Calls: 4
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of Jdk8WithJettyBootPlatform$Companion:
+
+Method: buildIfSupported
+Reachable Reflect Methods Count: 4
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 36
+at line 137
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 61
+at line 138
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 87
+at line 139
+Feature Category: LoadClass which is Dynamic
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 113
+at line 140
+Feature Category: LoadClass which is Dynamic
+-----------------------------
+Class: DeferredSocketAdapter
+reachable Reflect Calls: 0
+Class only reaches reflection calls transitively
+-----------------------------
 Class: Jdk8WithJettyBootPlatform
 reachable Reflect Calls: 4
 Class reaches Reflection Calls directly
@@ -266,6 +259,17 @@ at PC = 25
 at line 63
 Feature Category: Proxy which is Dynamic
 
+Method: afterHandshake
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 22
+at line 53
+Feature Category: InvokeMethod which is Dynamic
+
 Method: configureTlsExtensions
 Reachable Reflect Methods Count: 2
 Reflect Features: 
@@ -281,17 +285,6 @@ Feature Category: Proxy which is Dynamic
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 92
 at line 43
-Feature Category: InvokeMethod which is Dynamic
-
-Method: afterHandshake
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 22
-at line 53
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: CloseGuard$Companion
@@ -319,6 +312,17 @@ Direct Features:
 InvokeMethod which is Dynamic
 Methods of CloseGuard:
 
+Method: warnIfOpen
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+InvokeMethod which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
+at PC = 20
+at line 47
+Feature Category: InvokeMethod which is Dynamic
+
 Method: createAndOpen
 Reachable Reflect Methods Count: 2
 Reflect Features: 
@@ -333,17 +337,6 @@ Feature Category: InvokeMethod which is Dynamic
 Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
 at PC = 46
 at line 35
-Feature Category: InvokeMethod which is Dynamic
-
-Method: warnIfOpen
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-InvokeMethod which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Object,java.lang.Object[]) }
-at PC = 20
-at line 47
 Feature Category: InvokeMethod which is Dynamic
 -----------------------------
 Class: ConscryptPlatform
@@ -392,24 +385,6 @@ at PC = 84
 at line 57
 Feature Category: LoadClass which is Dynamic
 -----------------------------
-Class: OpenJSSEPlatform
-reachable Reflect Calls: 1
-Class reaches Reflection Calls directly
-Direct Features: 
-LoadClass which is Dynamic
-Methods of OpenJSSEPlatform:
-
-Method: <clinit>
-Reachable Reflect Methods Count: 1
-Reflect Features: 
-LoadClass which is Dynamic
-Reachable Reflect Methods: 
-
-Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
-at PC = 24
-at line 91
-Feature Category: LoadClass which is Dynamic
------------------------------
 Class: Jdk8WithJettyBootPlatform$AlpnProvider
 reachable Reflect Calls: 1
 Class reaches Reflection Calls directly
@@ -427,6 +402,24 @@ Call of java.lang.reflect.Method{ public java.lang.Object invoke(java.lang.Objec
 at PC = 336
 at line 118
 Feature Category: InvokeMethod which is Dynamic
+-----------------------------
+Class: OpenJSSEPlatform
+reachable Reflect Calls: 1
+Class reaches Reflection Calls directly
+Direct Features: 
+LoadClass which is Dynamic
+Methods of OpenJSSEPlatform:
+
+Method: <clinit>
+Reachable Reflect Methods Count: 1
+Reflect Features: 
+LoadClass which is Dynamic
+Reachable Reflect Methods: 
+
+Call of java.lang.Class{ public static java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader) }
+at PC = 24
+at line 91
+Feature Category: LoadClass which is Dynamic
 -----------------------------
 Class: Android10Platform
 reachable Reflect Calls: 0

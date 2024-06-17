@@ -3,6 +3,7 @@ Classes contained in this project: 30134
 Classes containing reachable Reflections count: 5
 Classes reaching reflection calls only transitively count: 0
 Methods contained in this project: 243606
+Reachable methods contained in this project: 651
 Methods containing reachable Reflections count: 6
 -----------------------------
 Class: Platform

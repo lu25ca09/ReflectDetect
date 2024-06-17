@@ -35,7 +35,8 @@ class ResultProduction(var rootService: RootService){
     result.++=("\nClasses containing reachable Reflections count: " + projectInfo.getdirectCounter)
     result.++=("\nClasses reaching reflection calls only transitively count: " + projectInfo.getTransitiveCounter)
     result.++=("\nMethods contained in this project: "+projectInfo.project.allMethods.size)
-    result.++=("\nMethods containing reachable Reflections count: " + projectInfo.getMethodCounter)
+    result.++=("\nReachable methods contained in this project: "+projectInfo.callGraph.reachableMethods().size)
+    result.++=("\nMethods containing reachable Reflections count: " + projectInfo.getReflectMethodCounter)
     projectInfo.classes.values.foreach(classInfo => {
       addSingleClassToResult(classInfo)
 
