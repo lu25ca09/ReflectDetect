@@ -1,6 +1,6 @@
 Analysing a java project:
 
-1: Place your jar to be analyzed in your preferred Directory
+1: Place the to be analyzed jar in your preferred Directory
 
 2: Start ReflectDetect with the path to your project as the program argument
 
